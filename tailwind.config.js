@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "1024px",
+      sm: { max: "479px" },
+      md: { max: "767px" },
+      lg: { max: "1023px" },
     },
     fontFamily: {
       open: ["Open Sans", "sans-serif"],
