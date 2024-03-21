@@ -1,0 +1,53 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-1.jpg",
+      "subject": "Mathematics",
+      "numberOfCurriculum": 10,
+      "duration": "15/20/0"
+    },
+    {
+      "id": 2,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-2.jpg",
+      "subject": "Science",
+      "numberOfCurriculum": 8,
+      "duration": "10/10/30"
+    },
+    {
+      "id": 3,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-3.jpg",
+      "subject": "History",
+      "numberOfCurriculum": 12,
+      "duration": "20/0/45"
+    },
+    {
+      "id": 4,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-3.jpg",
+      "subject": "History",
+      "numberOfCurriculum": 12,
+      "duration": "20/0/45"
+    },
+    {
+      "id": 5,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-2.jpg",
+      "subject": "Science",
+      "numberOfCurriculum": 8,
+      "duration": "10/10/30"
+    },
+    {
+      "id": 6,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-3.jpg",
+      "subject": "History",
+      "numberOfCurriculum": 12,
+      "duration": "20/0/45"
+    },
+    {
+      "id": 7,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-3.jpg",
+      "subject": "History",
+      "numberOfCurriculum": 12,
+      "duration": "20/0/45"
+    }
+  ]
+}
