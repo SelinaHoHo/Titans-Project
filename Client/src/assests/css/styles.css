@@ -2,3 +2,19 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+h1 {
+  @apply text-xl font-serif md:text-2xl lg:text-3xl;
+}
+h2 {
+  @apply text-lg font-serif md:text-xl lg:text-2xl;
+}
+h3 {
+  @apply text-base font-serif md:text-lg lg:text-xl;
+}
+p {
+  @apply text-sm font-open;
+}
+span {
+  @apply text-sm font-open;
+}
