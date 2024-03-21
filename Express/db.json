@@ -49,5 +49,31 @@
       "numberOfCurriculum": 12,
       "duration": "20/0/45"
     }
+  ],
+  "teacher": [
+    {
+      "id": 1,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-3.jpg",
+      "name": "damie glendell",
+      "jobs": "co-director"
+    },
+    {
+      "id": 2,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-2.jpg",
+      "name": "james catwin",
+      "jobs": "art director"
+    },
+    {
+      "id": 3,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-1.jpg",
+      "name": "jenny sheen",
+      "jobs": "digital media programming"
+    },
+    {
+      "id": 4,
+      "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-4.jpg",
+      "name": "jim morrison",
+      "jobs": "chief programmer"
+    }
   ]
 }
