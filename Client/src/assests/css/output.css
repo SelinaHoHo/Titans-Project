@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -566,9 +566,84 @@ video {
   }
 }
 
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-\[\#838C48\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(131 140 72 / var(--tw-border-opacity));
+}
+
+.bg-\[\#838C48\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(131 140 72 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-inTouch {
+  background-image: url('../images/newsletter-parallax.png');
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.py-\[100px\] {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pb-11 {
+  padding-bottom: 2.75rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-2\.5 {
+  padding-bottom: 0.625rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[\#121116\] {
+  --tw-text-opacity: 1;
+  color: rgb(18 17 22 / var(--tw-text-opacity));
+}
+
+.text-\[\#605d6c\] {
+  --tw-text-opacity: 1;
+  color: rgb(96 93 108 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 h1 {
