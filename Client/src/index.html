@@ -43,7 +43,16 @@
     }
   </script>
 </head>
-<body>
+<body class="relative">
+  <button onclick="scrollToTop()"
+    class="bg-xanhMain w-[40px] h-[40px] text-white shadow-md rounded-sm fixed bottom-4 right-4 z-50 hover:bg-[#2B2F10] transition duration-700 ease-in-out">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
   <div class="container mx-auto bg-re">
     <select id="languageSelect">
       <option value="vi">Vietnamese</option>
@@ -81,5 +90,97 @@
     };
   </script>
 </body>
+<footer>
+  <!-- footer top -->
+  <section class="relative px-4 md:px-8 pb-1 pt-12 text-black bg-beLight">
+    <div
+      class="absolute left-1/2 top-0 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-beMain p-2">
+      <img src="./assests/images/lms-logo.png" alt="Logo">
+    </div>
+    <div class="mx-auto max-w-screen-xl py-11">
+      <div class="mx-6 flex flex-wrap justify-between">
+        <!-- Column 1 -->
+        <div class="order-first md:mb-10 lg:mb-16 w-full px-6 text-center md:w-full lg:mx-0 lg:w-1/4 lg:text-left">
+          <h3 data-i18n="footer.col1-title" class="mb-2 sm:text-xl text-[#303030]"></h3>
+          <p data-i18n="footer.col1-param1" class="mb-3 text-[#808080] pt-2"></p>
+          <p data-i18n="footer.col1-param2" class="mb-5 text-[#808080]"></p>
+          <button data-i18n="footer.col1-button"
+            class="rounded border-2 border-xanhMain px-4 py-2 text-xanhMain hover:bg-xanhMain hover:text-white"><span></span></button>
+        </div>
+        <!-- Column 2 -->
+        <div class="mt-8 w-full px-6 text-center sm:text-left md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
+          <h3 data-i18n="footer.col2-title" class="mb-2 sm:text-xl text-[#303030]"></h3>
+          <ul class="text-sm text-gray-400">
+            <li class="mb-2 border-b border-gray-400 py-2">
+              <a data-i18n="footer.col2-param1" href="#" class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
+              <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+            </li>
+            <li class="mb-2 border-b border-gray-400 pb-2">
+              <a data-i18n="footer.col2-param2" href="#" class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
+              <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+            </li>
+            <li class="mb-2">
+              <a data-i18n="footer.col2-param3" href="#" class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
+              <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+            </li>
+          </ul>
+        </div>
+        <!-- Column 3 -->
+        <div class="mt-8 h-full w-full px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
+          <h3 data-i18n="footer.col3-title" class="mb-2 sm:text-xl text-[#303030]"></h3>
+          <ul class="text-sm text-gray-400">
+            <li data-i18n="footer.col3-param1" class="mb-2 border-b border-gray-400 py-2">
+              <a href="#" class="text-[#808080] hover:text-xanhMain"></a>
+            </li>
+            <li data-i18n="footer.col3-param2" class="mb-2 border-b border-gray-400 py-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
+            <li data-i18n="footer.col3-param3" class="mb-2 border-b border-gray-400 py-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
+            <li data-i18n="footer.col3-param4" class="mb-2 border-b border-gray-400 py-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
+            <li data-i18n="footer.col3-param5" class="mb-2 pt-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
+          </ul>
+        </div>
+        <!-- Column 4 -->
+        <div class="mt-8 h-full w-[240px] px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
+          <h3 data-i18n="footer.col4-title" class="mb-2 sm:text-xl text-[#303030]"></h3>
+          <ul class="text-sm text-gray-400 md:w-[90%] lg:w-[70%]">
+            <li class="mb-2 border-b border-gray-400 py-2 flex">
+              <span class="text-xanhMain"><i class="fa-solid fa-location-arrow"></i></span>
+              <span data-i18n="footer.col4-param" class="text-[#808080] pl-2"></span>
+            </li>
+            <li class="mb-2 border-b border-gray-400 py-2">
+              <span class="text-xanhMain"><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:+11276542233"><span class="text-[#808080] hover:text-xanhMain pl-2">+11 (2) 7654
+                  2233</span></a>
+            </li>
+            <li class="mb-2 border-b border-gray-400 py-2">
+              <span class="text-xanhMain"><i class="fa-solid fa-fax"></i></span><a href="tel:+11576542244"><span
+                  class="text-[#808080] hover:text-xanhMain pl-2">+11 (5) 7654 2244</span></a>
+            </li>
+            <li class="mb-2">
+              <span class="text-xanhMain"><i class="fa-solid fa-envelope"></i></span><a
+                href="mailto:lms@gmail.com"><span
+                  class="text-[#808080] hover:text-xanhMain pl-2">lms@gmail.com</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer bottom -->
+  <section class="md:flex md:justify-between md:items-center bg-xanhMain py-7 px-8 text-white lg:px-28">
+    <div class="mb-4 flex justify-center md:block lg:flex items-center sm:mb-0">
+      <div class="flex">
+        <p>Copyright © 2020 LMS Theme All Rights Reserved</p>
+        <span class="mx-4 h-4 border-r-2"></span>
+      </div>
+      <p>Design Themes</p>
+    </div>
+    <div class="flex justify-center space-x-4 mt-4 md:mt-0 sm:gap-5">
+      <span class="text-[#ffffff]"><a class="social-icon" href="#!"><i class="fa-brands fa-twitter"></i></i></a></span>
+      <span class="text-[#ffffff]"><a class="social-icon" href="#!"><i class="fa-brands fa-youtube"></i></a></span>
+      <span class="text-[#ffffff]"><a class="social-icon" href="#!"><i class="fa-brands fa-facebook-f"></i></a></span>
+      <span class="text-[#ffffff]"><a class="social-icon" href="#!"><i class="fa-brands fa-skype"></i></a></span>
+    </div>
+  </section>
+</footer>
 
 </html>

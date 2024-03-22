@@ -2,5 +2,24 @@
     "header": {
       "title": "Tiêu đề",
       "subtitle": "Tiêu đề phụ"
+    },
+    "footer": {
+      "col1-title": "Về Chúng Tôi",
+      "col2-title": "Các Khóa Học Phổ Biến",
+      "col3-title": "Liên Kết Nhanh",
+      "col4-title": "Liên Hệ",
+      "col1-param1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lobortis diam.",
+      "col1-param2": "Duis tellus enim, vestibulum eget varius id, vulputate et mi. Nullam feugiat, diam quis interdum varius.",
+      "col1-button": "BẮT ĐẦU HỌC NGAY",
+      "col2-param1": "Điện Tử Công Suất",
+      "col2-param2": "Giới Thiệu Về Giải Tích",
+      "col2-param3": "Luật và Chính Sách Cơ Bản",
+      "col2-free": "Miễn Phí",
+      "col3-param1": "> Tất Cả Các Khóa Học",
+      "col3-param2": "> Phiên Mùa Hè",
+      "col3-param3": "> Các Khóa Học Chuyên Nghiệp",
+      "col3-param4": "> Chính Sách Bảo Mật",
+      "col3-param5": "> Điều Khoản Sử Dụng",
+      "col4-param": "Công Ty Thiết Kế Themes Inc. Mary Jane St, Sydney 2233 Úc."
     }
   }
