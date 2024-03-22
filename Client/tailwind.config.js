@@ -2,7 +2,6 @@
 module.exports = {
   content: ["./client/src/**/*.{html,js}"],
   theme: {
-    extend: {},
     screens: {
       sm: { max: "479px" },
       md: { max: "767px" },

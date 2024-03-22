@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assests/css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contact</title>
+    <script
+      src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js"
+      defer
+    ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+      .pending {
+        position: relative;
+      }
+
+      .pending::after {
+        content: "";
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ffffff;
+        border-top: 2px solid #da853d;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>navbar</nav>
+
+    <!-- header -->
+    <div
+      class="bg-[#da853d] text-[#ffffff] flex-col md:text-center md:flex md:items-center md:justify-center py-8"
+    >
+      <div
+        class="px-[200px] md:px-0 md:flex flex-col md:items-center md:justify-center"
+      >
+        <h1
+          class="font-serif text-[40px] md:text-center md:text-[26px] mb-[20px] md:mb-[5px] font-semibold mx-15"
+        >
+          Contact
+        </h1>
+        <div class="flex font-open text-[14px]">
+          <a
+            href="index.html"
+            class="cursor-pointer text-white hover:text-[#000000] transition-colors duration-500 ease-in-out"
+            >Home</a
+          >
+          <div class="mx-2">/</div>
+          <div>Contact</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="bg-[#fdf6ea] py-4 px-[200px] md:px-3 flex sm:flex-col flex-row">
+      <!-- Give Message -->
+
+      <div
+        class="order-1 sm:order-2 pt-4 pb-4 pr-4 sm:pr-0 basis-3/5"
+        data-aos="fade-right"
+      >
+        <div
+          class="text-[#303030] font-serif text-[26px] sm:text-[20px] font-semibold"
+        >
+          Give Us A Message
+
+          <div class="w-10 mt-2">
+            <div class="border-b-4 border-[#838c48]"></div>
+          </div>
+        </div>
+
+        <form class="py-8">
+          <div class="mb-4 relative">
+            <span
+              class="absolute inset-y-0 left-0 flex items-center p-3 border-r-2 border-[#aeadad]"
+            >
+              <i class="fa-solid fa-user fa-lg text-[#aeadad]"></i>
+            </span>
+            <input
+              required
+              type="text"
+              placeholder="Your Name"
+              class="pl-12 w-full px-2 py-4 border border-[#aeadad] rounded"
+            />
+          </div>
+          <div class="mb-4 relative">
+            <span
+              class="absolute inset-y-0 left-0 flex items-center p-3 border-r-2 border-[#aeadad]"
+            >
+              <i class="fa-solid fa-envelope text-[#aeadad]"></i>
+            </span>
+            <input
+              required
+              type="email"
+              placeholder="Email"
+              class="pl-12 w-full px-2 py-4 border border-[#aeadad] rounded"
+            />
+          </div>
+          <div class="mb-4 relative">
+            <span
+              class="absolute inset-y-0 left-0 flex items-center p-3 border-r-2 border-[#aeadad]"
+            >
+              <i class="fa-solid fa-mobile fa-lg text-[#aeadad]"></i>
+            </span>
+            <input
+              required
+              type="tel"
+              placeholder="Phone"
+              class="pl-12 w-full px-2 py-4 border border-[#aeadad] rounded"
+            />
+          </div>
+          <div class="mb-4 relative">
+            <span
+              class="absolute left-0 flex items-center pl-3 p-3 border-r-2 border-[#aeadad] h-[94%]"
+            >
+              <i class="fa-solid fa-file fa-lg text-[#aeadad]"></i>
+            </span>
+            <textarea
+              required
+              placeholder="Message"
+              class="pl-12 w-full px-2 py-4 border border-[#aeadad] rounded"
+            ></textarea>
+          </div>
+          <div class="flex items-end justify-end">
+            <button
+              type="submit"
+              class="px-4 py-2 bg-xanhMain text-[#ffffff] uppercase font-bold rounded-md transition-colors duration-500 ease-in-out hover:bg-[#da853d]"
+              onclick="handleClick(this)"
+            >
+              Send Email
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+
+      <div class="order-2 sm:order-1 pt-4 pb-4 basis-2/5" data-aos="fade-left">
+        <div
+          class="text-[#303030] font-serif text-[26px] sm:text-[20px] font-semibold"
+        >
+          Contact Info
+          <div class="w-10 mt-2">
+            <div class="border-b-4 border-[#838c48]"></div>
+          </div>
+        </div>
+
+        <div class="pt-8 font-open">
+          <div class="space-y-4">
+            <div class="flex flex-row items-center justify-center space-x-2">
+              <div class="basis-1/6 text-center">
+                <i class="fa-solid fa-location-arrow fa-xl text-[#da853d]"></i>
+              </div>
+              <div class="basis-5/6">
+                <span class="text-[#80809b] text-[14px]"
+                  >The Design Themes Inc. Mary Jane St, Sydney 2233
+                  Australia.</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <div class="border-b-2 border-[#da853d] basis-1/6"></div>
+              <div class="border-b-2 border-[#dddddd] basis-5/6"></div>
+            </div>
+
+            <div class="flex flex-row items-center justify-center space-x-2">
+              <div class="basis-1/6 text-center">
+                <i class="fa-solid fa-phone fa-xl text-[#da853d]"></i>
+              </div>
+              <div class="basis-5/6">
+                <span class="text-[#303030] text-[14px]">+1 200 258 2145</span>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <div class="border-b-2 border-[#da853d] basis-1/6"></div>
+              <div class="border-b-2 border-[#dddddd] basis-5/6"></div>
+            </div>
+            <div class="flex flex-row items-center justify-center space-x-2">
+              <div class="basis-1/6 text-center">
+                <i class="fa-solid fa-fax fa-xl text-[#da853d]"></i>
+              </div>
+              <div class="basis-5/6">
+                <span class="text-[#303030] text-[14px]">+1 100 458 2345</span>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <div class="border-b-2 border-[#da853d] basis-1/6"></div>
+              <div class="border-b-2 border-[#dddddd] basis-5/6"></div>
+            </div>
+            <div class="flex flex-row items-center justify-center space-x-2">
+              <div class="basis-1/6 text-center">
+                <i class="fa-solid fa-mobile fa-xl text-[#da853d]"></i>
+              </div>
+              <div class="basis-5/6">
+                <span class="text-[#303030] text-[14px]">+91 12345 67890</span>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <div class="border-b-2 border-[#da853d] basis-1/6"></div>
+              <div class="border-b-2 border-[#dddddd] basis-5/6"></div>
+            </div>
+            <div class="flex flex-row items-center justify-center space-x-2">
+              <div class="basis-1/6 text-center">
+                <i class="fa-solid fa-envelope fa-xl text-[#da853d]"></i>
+              </div>
+              <div class="basis-5/6">
+                <span class="text-[#303030] text-[14px]">super@email.com</span>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <div class="border-b-2 border-[#da853d] basis-1/6"></div>
+              <div class="border-b-2 border-[#dddddd] basis-5/6"></div>
+            </div>
+            <div class="flex flex-row items-center justify-center space-x-2">
+              <div class="basis-1/6 text-center">
+                <i class="fa-solid fa-earth-americas fa-xl text-[#da853d]"></i>
+              </div>
+              <div class="basis-5/6">
+                <span class="text-[#303030] text-[14px]">google.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <iframe
+      class="w-full"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d239.64231409839047!2d108.24230722421291!3d16.051107998138484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1711083761759!5m2!1svi!2s"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!-- footer -->
+    <div>
+      <footer>footer</footer>
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      function handleClick(button) {
+        button.classList.add("pending");
+        button.innerText = "Pending...";
+
+        // Simulate a successful or error response after 2 seconds
+        setTimeout(function () {
+          // Simulate success
+          button.classList.remove("pending");
+          button.innerText = "Send Email";
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
