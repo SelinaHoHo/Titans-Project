@@ -741,6 +741,14 @@ video {
   height: 40px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[800px\] {
+  height: 800px;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -910,6 +918,19 @@ video {
 .bg-beMain {
   --tw-bg-opacity: 1;
   background-color: rgb(253 246 234 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#F5E9D4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 233 212 / var(--tw-bg-opacity));
 }
 
 .bg-fixed {
@@ -1318,6 +1339,54 @@ span {
 
   .lg\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .lg\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .lg\:pb-1 {
+    padding-bottom: 0.25rem;
+  }
+
+  .lg\:pt-12 {
+    padding-top: 3rem;
   }
 
   .lg\:text-left {
