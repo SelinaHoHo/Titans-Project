@@ -10,7 +10,7 @@ module.exports = {
       },
       fontFamily: {
         open: ["Open Sans", "sans-serif"],
-        serif: ["Raleway", "serif"],
+        serif: ["Raleway", "sans-serif"],
       },
       spacing: {
         128: "32rem",

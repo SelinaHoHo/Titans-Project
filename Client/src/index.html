@@ -10,19 +10,23 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
   <script src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </head>
 
 <body>
-  <div class="container mx-auto bg-re">
-    <select id="languageSelect">
-      <option value="vi">Vietnamese</option>
-      <option value="en">English</option>
-    </select>
+  <select id="languageSelect">
+    <option value="vi">Vietnamese</option>
+    <option value="en">English</option>
+  </select>
+  <!-- <div class="container mx-auto bg-re">
     <h1 data-i18n="header.title"></h1>
     <h2 data-i18n="header.title"></h2>
     <h3 data-i18n="header.title"></h3>
     <p data-i18n="header.subtitle"></p>
-  </div>
+  </div> -->
   <script defer>
     window.onload = function () {
       var translator = new Translator({
@@ -48,15 +52,21 @@
     };
   </script>
   <!-- Get in touch  -->
-  <section class="container bg-inTouch py-[100px]">
-    <h1 class="text-center text-[#121116] pb-2.5">
-      GET IN TOUCH WITH US</h1>
-    <p class="text-center text-[#605d6c] pb-11">
-      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
-      form, by injected humour, or randomised words which Ipsum slightly believable</p>
-    <div class="mx-auto p-2 text-center">
-      <input class="bg-white border border-[#838C48] p-2" type="text" placeholder="Your Email Address">
-      <button class="bg-[#838C48] p-2 text-white" type="submit">SUBCRIBE</button>
+  <section class="bg-center bg-inTouch py-[120px] bg-[#DA853D] text-center">
+    <div data-aos="fade-down">
+      <h1 data-i18n="getInTouch.title" class="text-white pb-2.5"></h1>
+      <p data-i18n="getInTouch.param" class="text-white pb-11 px-[10%]"></p>
+    </div>
+    <div data-aos="fade-up" class="p-2 md:flex md:justify-center md:mx-auto md:w-[70%]">
+      <div>
+        <input class="bg-white border border-transparent py-3 md:pr-[180px] w-[70%] md:w-auto pl-3.5 rounded-sm"
+          type="text" placeholder="Your Email Address">
+      </div>
+      <div>
+        <button
+          class="bg-[#838C48] py-3 px-6 mt-3 md:mt-0 hover:bg-[#2b2f10] transition duration-700 ease-in-out border border-transparent rounded-sm"
+          type="submit"><span data-i18n="getInTouch.button" class="text-white"></span></button>
+      </div>
     </div>
   </section>
 </body>

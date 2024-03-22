@@ -2,5 +2,10 @@
     "header": {
       "title": "Tiêu đề",
       "subtitle": "Tiêu đề phụ"
+    },
+    "getInTouch": {
+      "title": "LIÊN HỆ VỚI CHÚNG TÔI",
+      "param": "Có nhiều biến thể của đoạn văn Lorem Ipsum có sẵn, nhưng đa số đã bị thay đổi theo một số hình thức, bởi lời nói đùa được chèn vào, hoặc các từ ngẫu nhiên làm cho Lorem Ipsum trở nên hợp lý một cách nhẹ nhàng",
+      "button": " ĐĂNG KÝ"
     }
   }

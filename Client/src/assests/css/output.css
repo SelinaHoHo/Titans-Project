@@ -583,18 +583,34 @@ video {
   margin-right: auto;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .border {
   border-width: 1px;
 }
 
-.border-\[\#838C48\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(131 140 72 / var(--tw-border-opacity));
+.border-transparent {
+  border-color: transparent;
 }
 
 .bg-\[\#838C48\] {
   --tw-bg-opacity: 1;
   background-color: rgb(131 140 72 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#DA853D\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 133 61 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -606,13 +622,32 @@ video {
   background-image: url('../images/newsletter-parallax.png');
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
-.py-\[100px\] {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-\[10\%\] {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-\[120px\] {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .pb-11 {
@@ -627,18 +662,16 @@ video {
   padding-bottom: 0.625rem;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pl-3\.5 {
+  padding-left: 0.875rem;
+}
+
 .text-center {
   text-align: center;
-}
-
-.text-\[\#121116\] {
-  --tw-text-opacity: 1;
-  color: rgb(18 17 22 / var(--tw-text-opacity));
-}
-
-.text-\[\#605d6c\] {
-  --tw-text-opacity: 1;
-  color: rgb(96 93 108 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -646,20 +679,29 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 h1 {
-  font-family: Raleway, serif;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media (min-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
   h1 {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -667,19 +709,12 @@ h1 {
 }
 
 h2 {
-  font-family: Raleway, serif;
-  font-size: 1.125rem;
+  font-family: Raleway, sans-serif;
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
 @media (min-width: 768px) {
-  h2 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width: 1024px) {
   h2 {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -687,19 +722,12 @@ h2 {
 }
 
 h3 {
-  font-family: Raleway, serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-family: Raleway, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 @media (min-width: 768px) {
-  h3 {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width: 1024px) {
   h3 {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -716,4 +744,40 @@ span {
   font-family: Open Sans, sans-serif;
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.hover\:bg-\[\#2b2f10\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 47 16 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:pr-\[180px\] {
+    padding-right: 180px;
+  }
 }
