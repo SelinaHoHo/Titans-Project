@@ -96,6 +96,58 @@
       });
     };
   </script>
+  <!-- // Upcoming Events -->
+  <section class="upcoming-event pb-12 pt-16 bg-beMain">
+    <div class="toan mx-auto p-3" style="max-width: 1170px;">
+      <div class="w-full">
+        <div class="first-row relative mb-6 flex flex-col items-start md:flex-row">
+          <div class="mb-4 flex-1 md:mb-0">
+            <h1 data-aos="fade-right" class="text-left text-2xl font-serif md:text-3xl text-[#303030]">UPCOMING EVENT</h1>
+            <hr class="absolute bottom-0 w-10 border-2 border-xanhMain" />
+          </div>
+          <div class="flex-1"></div>
+          <div data-aos="fade-left" class="ml-auto flex hidden items-center space-x-1 md:block">
+            <button class="arrow-back rounded border-2 border-black px-3 py-2 hover:bg-green-500 hover:text-white">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="arrow-forward rounded border-2 border-black px-3 py-2 hover:bg-green-500 hover:text-white">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div data-aos="zoom-out-up" class="flex flex-col md:flex-row">
+          <div class="event-1 event mb-4 flex flex-col md:mb-0 md:flex-row">
+            <img class="mr-8 w-full md:mr-8 md:w-1/3" src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/course5.jpg" alt="Event 1" />
+            <div>
+              <a href="#" class="text-[#303030] hover:text-green-500">
+                <h3 class="text-[20px] font-serif">Free Yoga Class at London</h3>
+              </a>
+              <p class="text-[#808080] text-sm font-open">April 5 @ 8:00 am - September 18 @ 5:00 pm</p>
+              <p class="text-[#808080] text-sm font-open">Pound Lane, United States</p>
+            </div>
+          </div>
+          <div class="event-2 event flex hidden flex-col md:flex md:flex-row">
+            <img class="mr-8 w-full md:mr-8 md:w-1/3" src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/event.jpg" alt="Event 2" />
+            <div>
+              <a href="#" class="text-[#303030] hover:text-green-500">
+                <h3 class="text-[20px] font-serif">Welcoming 25th Batch</h3>
+              </a>
+              <p class="text-[#808080] text-sm font-open">December 12, 2024 @ 8:00 am - December 13, 2025 @ 5:00 pm</p>
+              <p class="text-[#808080] text-sm font-open">Peppard Hill, United States</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center justify-center space-x-2 md:hidden">
+          <button class="arrow-back rounded border-2 border-black px-3 py-2 hover:bg-green-500 hover:text-white">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="arrow-forward rounded border-2 border-black px-3 py-2 hover:bg-green-500 hover:text-white">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Get in touch  -->
   <section data-aos="zoom-in" class="bg-center bg-inTouch py-[120px] bg-[#DA853D] text-center">
     <div data-aos="fade-down">
@@ -210,4 +262,47 @@
 <script>
   AOS.init();
 </script>
+<script>
+  const event1 = document.querySelector('.event-1');
+  const event2 = document.querySelector('.event-2');
+  const arrowBacks = document.querySelectorAll('.arrow-back');
+  const arrowForwards = document.querySelectorAll('.arrow-forward');
+  
+  function updateButtons() {
+      const isDesktop = window.innerWidth >= 768;
+      const isEvent1Visible = !event1.classList.contains('hidden');
+      arrowBacks.forEach(button => button.disabled = isDesktop || isEvent1Visible);
+      arrowForwards.forEach(button => button.disabled = isDesktop || !isEvent1Visible);
+  
+      // If it's desktop, show all events
+      if (isDesktop) {
+          event1.classList.remove('hidden');
+          event2.classList.remove('hidden');
+      } else {
+          // If it's mobile, show only the first event
+          if (isEvent1Visible) {
+              event1.classList.remove('hidden');
+              event2.classList.add('hidden');
+          } else {
+              event1.classList.add('hidden');
+              event2.classList.remove('hidden');
+          }
+      }
+  }
+  
+  arrowBacks.forEach(button => button.addEventListener('click', () => {
+      event1.classList.remove('hidden');
+      event2.classList.add('hidden');
+      updateButtons();
+  }));
+  
+  arrowForwards.forEach(button => button.addEventListener('click', () => {
+      event1.classList.add('hidden');
+      event2.classList.remove('hidden');
+      updateButtons();
+  }));
+  
+  window.addEventListener('resize', updateButtons);
+  updateButtons();
+  </script>
 </html>
