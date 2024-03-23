@@ -3,6 +3,11 @@
       "title": "Tiêu đề",
       "subtitle": "Tiêu đề phụ"
     },
+    "getInTouch": {
+      "title": "LIÊN HỆ VỚI CHÚNG TÔI",
+      "param": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which Ipsum slightly believable",
+      "button": " ĐĂNG KÝ"
+    },
     "footer": {
       "col1-title": "Về Chúng Tôi",
       "col2-title": "Các Khóa Học Phổ Biến",
