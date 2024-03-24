@@ -8,6 +8,15 @@
       "param": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which Ipsum slightly believable",
       "button": "SUBCRIBE"
     },
+    "upcomingEvent": {
+      "title": "UPCOMING EVENT",
+      "sub-title1": "Free Yoga Class at London",
+      "sub-title2": "Welcoming 25th Batch",
+      "param1": "April 5 @ 8:00 am - September 18 @ 5:00 pm",
+      "param2": "Pound Lane, United States",
+      "param3": "December 12, 2024 @ 8:00 am - December 13, 2025 @ 5:00 pm",
+      "param4": "Pe’amond Hill, United States"
+    },
     "footer": {
       "col1-title": "About Us",
       "col2-title": "Popular Courses",
