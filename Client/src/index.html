@@ -17,40 +17,7 @@
   <script src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js" defer></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          screens: {
-            sm: "640px",
-            md: "768px",
-            lg: "1024px",
-          },
-          fontFamily: {
-            open: ["Open Sans", "sans-serif"],
-            serif: ["Raleway", "sans-serif"],
-          },
-          extend: {
-            spacing: {
-              128: "32rem",
-              144: "36rem",
-            },
-            borderRadius: {
-              "4xl": "2rem",
-            },
-          },
-          colors: {
-            beMain: "#FDF6EA",
-            beLight: "#F5E9D4",
-            xanhMain: "#838C48",
-          },
-          backgroundImage: {
-            'inTouch': "url('../src/assests/images/newsletter-parallax.png')",
-          }
-        },
-      }
-    }
-  </script>
+  <script src="js/tailwind.config.js"></script>
   <link rel="stylesheet" href="assests/css/header.css">
 </head>
 <body class="relative">
@@ -780,47 +747,5 @@
 <script>
   AOS.init();
 </script>
-<script>
-  const event1 = document.querySelector('.event-1');
-  const event2 = document.querySelector('.event-2');
-  const arrowBacks = document.querySelectorAll('.arrow-back');
-  const arrowForwards = document.querySelectorAll('.arrow-forward');
-  
-  function updateButtons() {
-      const isDesktop = window.innerWidth >= 768;
-      const isEvent1Visible = !event1.classList.contains('hidden');
-      arrowBacks.forEach(button => button.disabled = isDesktop || isEvent1Visible);
-      arrowForwards.forEach(button => button.disabled = isDesktop || !isEvent1Visible);
-  
-      // If it's desktop, show all events
-      if (isDesktop) {
-          event1.classList.remove('hidden');
-          event2.classList.remove('hidden');
-      } else {
-          // If it's mobile, show only the first event
-          if (isEvent1Visible) {
-              event1.classList.remove('hidden');
-              event2.classList.add('hidden');
-          } else {
-              event1.classList.add('hidden');
-              event2.classList.remove('hidden');
-          }
-      }
-  }
-  
-  arrowBacks.forEach(button => button.addEventListener('click', () => {
-      event1.classList.remove('hidden');
-      event2.classList.add('hidden');
-      updateButtons();
-  }));
-  
-  arrowForwards.forEach(button => button.addEventListener('click', () => {
-      event1.classList.add('hidden');
-      event2.classList.remove('hidden');
-      updateButtons();
-  }));
-  
-  window.addEventListener('resize', updateButtons);
-  updateButtons();
-</script>
+<script src="js/home.js"></script>
 </html>
