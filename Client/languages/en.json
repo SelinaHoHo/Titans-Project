@@ -1,40 +1,44 @@
 {
-    "header": {
-      "title": "Title",
-      "subtitle": "This is subtitle"
-    },
-    "getInTouch": {
-      "title": "GET IN TOUCH WITH US",
-      "param": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which Ipsum slightly believable",
-      "button": "SUBCRIBE"
-    },
-    "upcomingEvent": {
-      "title": "UPCOMING EVENT",
-      "sub-title1": "Free Yoga Class at London",
-      "sub-title2": "Welcoming 25th Batch",
-      "param1": "April 5 @ 8:00 am - September 18 @ 5:00 pm",
-      "param2": "Pound Lane, United States",
-      "param3": "December 12, 2024 @ 8:00 am - December 13, 2025 @ 5:00 pm",
-      "param4": "Pe’amond Hill, United States"
-    },
-    "footer": {
-      "col1-title": "About Us",
-      "col2-title": "Popular Courses",
-      "col3-title": "Quick Links",
-      "col4-title": "Contact Us",
-      "col1-param1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lobortis diam.",
-      "col1-param2": "Duis tellus enim, vestibulum eget varius id, vulputate et mi. Nullam feugiat, diam quis interdum varius.",
-      "col1-button": "START LEARNING NOW",
-      "col2-param1": "Power Electronics",
-      "col2-param2": "Introduction to Calculus",
-      "col2-param3": "Basic Laws and Policies",
-      "col2-free": "Free",
-      "col3-param1": "> All Courses",
-      "col3-param2": "> Summer Sessions",
-      "col3-param3": "> Professional Courses",
-      "col3-param4": "> Privacy Policy",
-      "col3-param5": "> Terms of Use",
-      "col4-param": "The Design Themes Inc. Mary Jane St, Sydney 2233 Australia."
-    }
-
+  "header": {
+    "title": "Title",
+    "subtitle": "This is subtitle",
+    "Blog": "BLOG",
+    "Param": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...",
+    "ContraryToPopular": "Contrary To Popular",
+    "OmnisVoluptasAssumenda": "Omnis Voluptas Assumenda",
+    "PieceOfClassical": "Piece of classical"
+  },
+  "getInTouch": {
+    "title": "GET IN TOUCH WITH US",
+    "param": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which Ipsum slightly believable",
+    "button": "SUBCRIBE"
+  },
+  "upcomingEvent": {
+    "title": "UPCOMING EVENT",
+    "sub-title1": "Free Yoga Class at London",
+    "sub-title2": "Welcoming 25th Batch",
+    "param1": "April 5 @ 8:00 am - September 18 @ 5:00 pm",
+    "param2": "Pound Lane, United States",
+    "param3": "December 12, 2024 @ 8:00 am - December 13, 2025 @ 5:00 pm",
+    "param4": "Pe’amond Hill, United States"
+  },
+  "footer": {
+    "col1-title": "About Us",
+    "col2-title": "Popular Courses",
+    "col3-title": "Quick Links",
+    "col4-title": "Contact Us",
+    "col1-param1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lobortis diam.",
+    "col1-param2": "Duis tellus enim, vestibulum eget varius id, vulputate et mi. Nullam feugiat, diam quis interdum varius.",
+    "col1-button": "START LEARNING NOW",
+    "col2-param1": "Power Electronics",
+    "col2-param2": "Introduction to Calculus",
+    "col2-param3": "Basic Laws and Policies",
+    "col2-free": "Free",
+    "col3-param1": "> All Courses",
+    "col3-param2": "> Summer Sessions",
+    "col3-param3": "> Professional Courses",
+    "col3-param4": "> Privacy Policy",
+    "col3-param5": "> Terms of Use",
+    "col4-param": "The Design Themes Inc. Mary Jane St, Sydney 2233 Australia."
   }
+}
