@@ -6,6 +6,7 @@
       "cost": "Free",
       "subject": "Mathematics",
       "numberOfCurriculum": 10,
+      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "15/20/0"
     },
     {
@@ -14,6 +15,7 @@
       "cost": "Free",
       "subject": "Science",
       "numberOfCurriculum": 8,
+      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "10/10/30"
     },
     {
@@ -22,6 +24,7 @@
       "cost": "Free",
       "subject": "History",
       "numberOfCurriculum": 12,
+      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "20/0/45"
     },
     {
@@ -30,6 +33,7 @@
       "cost": "Free",
       "subject": "History",
       "numberOfCurriculum": 12,
+      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "20/0/45"
     },
     {
@@ -38,6 +42,7 @@
       "cost": "50",
       "subject": "Science",
       "numberOfCurriculum": 8,
+      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "10/10/30"
     },
     {
@@ -46,6 +51,7 @@
       "cost": "50",
       "subject": "History",
       "numberOfCurriculum": 12,
+      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "20/0/45"
     },
     {
@@ -54,6 +60,7 @@
       "cost": "50",
       "subject": "History",
       "numberOfCurriculum": 12,
+      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "20/0/45"
     }
   ],
