@@ -1,26 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assests/css/output.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assests/css/output.css" />
   <link rel="stylesheet" href="./assests/css/styles.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <title>Courses Detail</title>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Courses Detail</title>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js" defer></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/tailwind.config.js"></script>
   <link rel="stylesheet" href="assests/css/header.css">
 </head>
+
+
+<header>
+  <div class="flex justify-center items-center w-[100%] mx-auto">
+    <div class="flex w-[15%]">
+      <div>
+        <a href="./index.html">
+          <img class="w-full cursor-pointer" src="./assests/images/lms-logo.png" alt="..." />
+        </a>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-end items-center">
+      <div
+        class="nav-links duration-500 md:static absolute md:min-h-fit left-0 md:w-auto sm:w-auto  flex items-center pr-5">
+
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[1.5vw]">
+          <!-- home -->
+          <li class="nav-it relative h-[5rem] flex items-center">
+            <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+              <p class="">home</p>
+            </a>
+            <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+              <li>
+                <a href="./index.html" class="block hover:bg-[#F5E9D4] p-2">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Home-Landing page</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Home-Subscription</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Home-Course-Search</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Home-Zoom Meting</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Home-Kis</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Point System</a>
+              </li>
+            </ul>
+          </li>
+          <!-- courses -->
+          <li class="nav-it relative h-[5rem] flex items-center">
+            <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+              <p class="">courses</p>
+            </a>
+            <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Courses-template</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Lesson</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Search-Course</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Membership</a>
+              </li>
+              <li>
+                <a href="./CourseDetail.html" class="block hover:bg-[#F5E9D4] p-2">Courses details</a>
+              </li>
+            </ul>
+          </li>
+          <!-- pages -->
+          <li class="nav-it relative h-[5rem] flex items-center">
+            <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+              <p class="">Pages</p>
+            </a>
+            <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">BuddyPress</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Event</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Headers</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Side-Navigation</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">About</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Teachers</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">TeachersProfile</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Blog -->
+          <li class="nav-it relative h-[5rem] flex items-center">
+            <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+              <p class="">Blog</p>
+            </a>
+            <ul
+              class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-1/2 transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
+              <div class="flex grid-cols-2 gap-x-20">
+                <li>
+                  <h4 class="p-2 font-bold uppercase">I.Column</h4>
+                  <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                    <span></span>
+                  </div>
+                  <div class="mt-4">
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Full--Width</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                  </div>
+                </li>
+
+                <li>
+                  <h4 class="p-2 font-bold uppercase">II.Column</h4>
+                  <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                    <span></span>
+                  </div>
+                  <div class="mt-4">
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                  </div>
+                </li>
+
+                <li>
+                  <h4 class="p-2 font-bold uppercase">III.Column</h4>
+                  <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                    <span></span>
+                  </div>
+                  <div class="mt-4">
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                  </div>
+                </li>
+
+                <li>
+                  <h4 class="p-2 font-bold uppercase">Thumb image</h4>
+                  <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                    <span></span>
+                  </div>
+                  <div class="mt-4">
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                  </div>
+                </li>
+              </div>
+              <div>
+                <h4 class="p-2 font-bold uppercase">FullWidth image</h4>
+                <div class="ml-2 border-b-2 w-1/12 border-[#DA853D]">
+                  <span></span>
+                </div>
+                <img src="./assests/images/mega-menu-image-1.png" alt="anh" />
+              </div>
+            </ul>
+          </li>
+          <!--Gallery  -->
+          <li class="nav-it relative h-[5rem] flex items-center">
+            <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+              <p class="">Gallery</p>
+            </a>
+            <ul
+              class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-[-30%] transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
+              <div class="flex grid-cols-2 gap-x-20">
+                <li>
+                  <h4 class="p-2 font-bold uppercase">I.Column</h4>
+                  <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                    <span></span>
+                  </div>
+                  <div class="mt-4">
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                  </div>
+                </li>
+
+                <li>
+                  <h4 class="p-2 font-bold uppercase">II.Column</h4>
+                  <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                    <span></span>
+                  </div>
+                  <div class="mt-4">
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                  </div>
+                </li>
+
+                <li>
+                  <h4 class="p-2 font-bold uppercase">III.Column</h4>
+                  <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                    <span></span>
+                  </div>
+                  <div class="mt-4">
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                  </div>
+                </li>
+
+                <li>
+                  <h4 class="p-2 font-bold uppercase">Thumb image</h4>
+                  <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                    <span></span>
+                  </div>
+                  <div class="mt-4">
+                    <form>
+                      <div class="mb-4">
+                        <input type="text" id="name" name="name"
+                          class="border border-gray-300 rounded-md w-full py-2 px-3 focus:outline-none focus:ring focus:border-blue-500"
+                          placeholder="Your Name" required />
+                      </div>
+                      <div class="mb-4">
+                        <input type="email" id="email" name="email"
+                          class="border border-gray-300 rounded-md w-full py-2 px-3 focus:outline-none focus:ring focus:border-blue-500"
+                          placeholder="Your Email" required />
+                      </div>
+                      <div class="mb-4">
+                        <textarea id="message" name="message"
+                          class="border border-gray-300 rounded-md w-full py-2 px-3 focus:outline-none focus:ring focus:border-blue-500"
+                          placeholder="Your Message" rows="4" required></textarea>
+                      </div>
+                      <div class="flex justify-end m-3">
+                        <button type="submit"
+                          class="bg-[#838C48] hover:bg-[#DA853D] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                          Send Message
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+              </div>
+
+            </ul>
+          </li>
+          <!--Shop  -->
+          <li class="nav-it relative h-[5rem] flex items-center">
+            <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+              <p class="">Shop</p>
+            </a>
+            <ul
+              class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-[-184%] transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
+              <div class="grid grid-cols-3 ">
+
+                <div class="w-3/5">
+                  <h4 class="p-2 font-bold uppercase">Popular Product</h4>
+                  <div class="ml-2 border-b-2  w-1/4 border-[#DA853D]"></div>
+                  <div class="mt-3 ">
+                    <ul class="bg-[#fdf6ea] py-3">
+                      <li>
+                        <div class="flex justify-between items-center mx-2 py-2 border-b-[1px] border-[#b4b4b4]">
+                          <div>
+                            <span
+                              class=" w-9/12 font-bold hover:text-[#838C48] transition duration-300 ease-in-out">Application
+                              Development</span>
+                            <div class="flex justify-start mt-2 items-center">
+                              <p class="line-through opacity-50 ">15.00</p>
+                              <p class="text-gray-500">$10.00</p>
+                            </div>
+                          </div>
+                          <img class="border w-[50px]  h-[50px] border-gray-400 p-[3px]"
+                            src="./assests/images/nav-image.jpg" alt="">
+                        </div>
+                      </li>
+
+
+                      <li>
+                        <div class="flex justify-between items-center mx-2 py-2 border-b-[1px] border-[#b4b4b4]">
+                          <div>
+                            <span
+                              class=" w-9/12 font-bold hover:text-[#838C48] transition duration-300 ease-in-out">Application
+                              Development</span>
+                            <div class="flex justify-start mt-2 items-center">
+                              <p class="line-through opacity-50 ">15.00</p>
+                              <p class="text-gray-500">$10.00</p>
+                            </div>
+                          </div>
+                          <img class="border w-[50px]  h-[50px] border-gray-400 p-[3px]"
+                            src="./assests/images/nav-image.jpg" alt="">
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="flex justify-between items-center mx-2 py-2 border-b-[1px] border-[#b4b4b4]">
+                          <div>
+                            <span
+                              class=" w-9/12 font-bold hover:text-[#838C48] transition duration-300 ease-in-out">Application
+                              Development</span>
+                            <div class="flex justify-start mt-2 items-center">
+                              <p class="line-through opacity-50 ">15.00</p>
+                              <p class="text-gray-500">$10.00</p>
+                            </div>
+                          </div>
+                          <img class="border w-[50px]  h-[50px] border-gray-400 p-[3px]"
+                            src="./assests/images/nav-image.jpg" alt="">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="w-3/5">
+                  <h4 class="p-2 font-bold uppercase">Shop Now</h4>
+                  <div class="ml-2 border-b-2  w-1/4 border-[#DA853D]"></div>
+                  <div class="mt-4">
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Shop four column</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Shop Three column</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Shop two column</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Cart</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Check-out</a>
+                  </div>
+                </div>
+
+                <div class="w-3/5">
+                  <h4 class="p-2 font-bold uppercase">My.Account</h4>
+                  <div class="ml-2 border-b-2  w-1/4 border-[#DA853D]"></div>
+                  <div class="mt-4">
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">View Order</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Order received</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Edit Account</a>
+                    <a href="#" class="block hover:bg-[#F5E9D4] p-2">Edit My Address</a>
+                  </div>
+                </div>
+              </div>
+
+            </ul>
+          </li>
+          <!-- contact -->
+          <li class="nav-it relative h-[5rem] flex items-center">
+            <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+              <p class="">contact</p>
+            </a>
+            <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Contact-Layout-1</a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Contact-Layout-2</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!--  -->
+      </div>
+
+      <!--  -->
+      <div class="nav-log flex items-center">
+        <ul class="flex md:flex-row md:items-center  gap-2 sm:items-center items-center ">
+          <li class="menu-button" onclick="showSidebar()">
+            <a class="flex items-center" href="#">
+              <i class="fa-solid fa-bars fa-lg"></i>
+              <span class="ml-2 text-lg {{ sm:text-sm }} ">Menu</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" title="login" class="" onclick="return false">
+              <i class="fa-solid fa-user {{ sm:p-2 }} inline-block rounded border-2 border-black"></i>
+          </li>
+          <li>
+            <a href="#" title="login" class=""> Login </a>
+          </li>
+          <li>
+            <a href="#" title="login" class=""> <span>|</span> </a>
+          </li>
+          <li>
+            <a href="#" title="register">Register</a>
+          </li>
+          <li>
+            <div class="relative flex">
+              <i class="fas fa-globe absolute top-1/2 transform -translate-y-1/2 left-3 text-xanhMain"></i>
+              <select id="languageSelect"
+                class="pl-10 pr-4 py-2 rounded-lg border border-xanhMain  bg-white text-gray-900 appearance-none ">
+                <option value="vi">VN</option>
+                <option value="en">ENG</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="sidebar-links">
+    <ul class="sidebar">
+      <li class="close-sidebar flex items-end justify-end" onclick="hideSidebar()">
+        <span>
+          <i class="fa-solid fa-xmark fa-xl"></i>
+        </span>
+      </li>
+
+      <li>
+        <a href="#" class="menu-link flex justify-between items-center" onclick="showNewSidebar()">
+          <span>Home</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="menu-link flex justify-between items-center">
+          <span>Courses</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="menu-link flex justify-between items-center">
+          <span>Pages</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="menu-link flex justify-between items-center">
+          <span>Blog</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="menu-link flex justify-between items-center">
+          <span>Gallery</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="menu-link flex justify-between items-center">
+          <span>Shop</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="menu-link flex justify-between items-center">
+          <span>Contact</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </li>
+    </ul>
+
+    <div class="overlay" onclick="hideSidebar()"></div>
+  </div>
+
+</header>
+
 <body class="relative">
-    <button type="button" onclick="scrollToTop()"
+  <button type="button" onclick="scrollToTop()"
     class="bg-xanhMain w-[40px] h-[40px] text-white shadow-md rounded-sm fixed bottom-4 right-4 z-50 hover:bg-[#2B2F10] transition duration-700 ease-in-out">
     <i class="fa-solid fa-chevron-up"> </i>
   </button>
@@ -29,138 +491,395 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
-   <div class="container mx-auto bg-re">
-    <select id="languageSelect">
-      <option value="vi">Vietnamese</option>
-      <option value="en">English</option>
-    </select>
-    <h1 data-i18n="header.title"></h1>
-    <h2 data-i18n="header.title"></h2>
-    <h3 data-i18n="header.title"></h3>
-    <p data-i18n="header.subtitle"></p>
+
+  <div class="flex flex-col lg:mx-28 lg:flex-row sm:mx-8 mb-10">
+    <div class="lg:w-[70%]   sm:w-[100%] border-2 h-[100px] flex">
+      <button id="prevBtn" class="px-4 py-2 bg-gray-200 text-gray-700">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <div class="flex overflow-hidden w-auto" id="tabContainer">
+        <!-- Tab buttons -->
+        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
+          <i class="fa-solid fa-book"></i>
+          <div class="pl-2">Curriculum</div>
+        </div>
+        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
+          <i class="fa-solid fa-book"></i>
+          <div class="pl-2">Curriculum</div>
+        </div>
+        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
+          <i class="fa-solid fa-book"></i>
+          <div class="pl-2">Curriculum</div>
+        </div>
+        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
+          <i class="fa-solid fa-book"></i>
+          <div class="pl-2">Curriculum</div>
+        </div>
+        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
+          <i class="fa-solid fa-book"></i>
+          <div class="pl-2">Curriculum</div>
+        </div>
+        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
+          <i class="fa-solid fa-book"></i>
+          <div class="pl-2">Curriculum</div>
+        </div>
+        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
+          <i class="fa-solid fa-book"></i>
+          <div class="pl-2">Curriculum</div>
+        </div>
+      </div>
+      <button id="nextBtn" class="px-4 py-2 bg-gray-200 text-gray-700">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+    <div class="lg:w-[30%]   sm:w-[100%] px-5">
+      <div class="my-5">
+        <h1 class=" text-2xl font-medium ">COURSE INFO</h1>
+      </div>
+      <div class="border-4 border-[#F5E9D4] bg-[#FDF6EA] p-6">
+        <ul class="w-full ">
+          <li class="mb-3 border-b-[1px] border-[#d3daa6] leading-8">
+            <p class="mb-3">Class:
+              <a href="#"><span class="hover:text-[#838C48] font-medium transition-colors duration-300">Kids Swimming
+                  Class</span>,</a>
+              <a href="#"><span class="hover:text-[#838C48] font-medium transition-colors duration-300">Learning to
+                  read</span>,</a>
+              <a href="#"><span class="hover:text-[#838C48] font-medium transition-colors duration-300">Music
+                  Class</span>,</a>
+              <a href="#"><span class="hover:text-[#838C48] font-medium transition-colors duration-300">free Art for All
+                  Ages</span>,</a>
+              <a href="#"><span class="hover:text-[#838C48] font-medium transition-colors duration-300">Summer
+                  Class</span>,</a>
+            </p>
+          </li>
+          <!--  -->
+          <li class="mb-3 border-b-[1px] border-[#d3daa6] leading-8">
+            <p class="mb-3">Education:
+              <a href="#"><span
+                  class="hover:text-[#838C48] font-medium transition-colors duration-300">Education</span>,</a>
+            </p>
+          </li>
+          <!--  -->
+          <li class="mb-3 border-b-[1px] border-[#d3daa6] leading-8">
+            <p class="mb-3">Lessons:
+              <a href="#"><span class="hover:text-[#838C48] font-medium transition-colors duration-300">5</span>,</a>
+            </p>
+          </li>
+          <!--  -->
+          <li class="mb-3 border-b-[1px] border-[#d3daa6] leading-8">
+            <p class="mb-3">Quizzes:
+              <a href="#"><span class="hover:text-[#838C48] font-medium transition-colors duration-300">2</span>,</a>
+            </p>
+          </li>
+          <!--  -->
+          <li class="mb-3 border-b-[1px] border-[#d3daa6] leading-8">
+            <p class="mb-3">Duration:
+              <span class=" font-medium">1 days 1 hours 50 minutes</span>
+            </p>
+          </li>
+          <!--  -->
+          <li class="mb-3 border-b-[1px] border-[#d3daa6] leading-8">
+            <p class="mb-3">Packages:
+              <a href="#"><span class="hover:text-[#838C48] font-medium transition-colors duration-300">Platinum
+                  Member</span>,</a>
+              <a href="#"><span class="hover:text-[#838C48] font-medium transition-colors duration-300">Gold
+                  Member</span>,</a>
+              <a href="#"><span class="hover:text-[#838C48] font-medium transition-colors duration-300">Silver
+                  Member</span>,</a>
+            </p>
+          </li>
+          <!--  -->
+          <li class="leading-8">
+            <p>Capacity:
+              <span class="font-medium">50</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="my-5">
+        <h1 class=" text-2xl font-medium ">SOCIAL SHARE</h1>
+        <div class="flex justify-start gap-3 mt-4">
+          <i
+            class="fa-brands fa-facebook-f rounded-full bg-blue-800 text-white border border-blue-800 p-2 hover:text-blue-800 hover:bg-white hover:border-blue-800 transition-colors duration-300 flex items-center justify-center w-10 h-10">
+          </i>
+          <i
+            class="fa-brands fa-delicious rounded-full bg-blue-500 text-white border border-blue-500  p-2 hover:text-blue-500 hover:bg-white hover:border-blue-500 transition-colors duration-300 flex items-center justify-center w-10 h-10">
+          </i>
+          <i
+            class="fa-brands fa-digg rounded-full bg-[#005BE2] text-white border border-[#005BE2]  p-2 hover:text-[#005BE2] hover:bg-white hover:border-[#005BE2] transition-colors duration-300 flex items-center justify-center w-10 h-10"></i>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <div class="lg:mx-28 sm:mx-8 mb-28">
+    <h1 class="text-2xl font-medium mb-8 ml-6">RELATED COURSES</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!--  -->
+      <div class="flex flex-col gap-4 mx-auto ">
+        <div class="h-fit group">
+          <div class="relative overflow-hidden">
+            <img class="image-card  object-cover w-auto z-0 hover:scale-110"
+              src="./assests/images/Courses-listing-image-1.jpg" alt="${item.course}" />
+            <div
+              class="absolute h-full w-full bg-[#838C48]/80 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <button
+                class="details border-2 border-white hover:text-black hover:bg-white duration-500 ease-in-out bg-transparent text-white py-2 px-5"
+                data-id="${item.id}">VIEW COURSE</button>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-[#DA853D] text-xl font-open !important">Free</h3>
+        <h3 class="text-[#333333] text-xl font-serif hover:text-[#DA853D] !important">Power Electronics</h3>
+        <div class="flex flex-row gap-2 items-center">
+          <a href="#" class="text-[#777777] text-sm font-open hover:text-[#DA853D]">Education</a>
+          <div class="border border-[#777777] h-[15px]"></div>
+          <a class="text-[#777777] text-sm font-open">7 Curriculum</a>
+        </div>
+        <div class="border border-black w-full"></div>
+        <div class="flex flex-col">
+          <div class="py-2 pl-2 flex flex-row items-center gap-2">
+            <i class="fa-regular fa-clock"></i>
+            <span class="font-serif text-[#303030]">1d 1h 50m</span>
+          </div>
+          <div class="flex flex-row">
+            <div class="flex items-center pr-1" id="star-container">
+              <img
+                class="star size-5 inline-flex justify-center items-center text-2xl rounded-full text-gray-300 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-600 dark:hover:text-yellow-500"
+                data-rating="1"
+                src="https://dtlmselementor.wpengine.com/wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
+                alt="vote">
+              <img
+                class="star size-5 inline-flex justify-center items-center text-2xl rounded-full text-gray-300 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-600 dark:hover:text-yellow-500"
+                data-rating="2"
+                src="https://dtlmselementor.wpengine.com/wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
+                alt="vote">
+              <img
+                class="star size-5 inline-flex justify-center items-center text-2xl rounded-full text-gray-300 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-600 dark:hover:text-yellow-500"
+                data-rating="3"
+                src="https://dtlmselementor.wpengine.com/wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
+                alt="vote">
+              <img
+                class="star size-5 inline-flex justify-center items-center text-2xl rounded-full text-gray-300 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-600 dark:hover:text-yellow-500"
+                data-rating="4"
+                src="https://dtlmselementor.wpengine.com/wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
+                alt="vote">
+              <img
+                class="star size-5 inline-flex justify-center items-center text-2xl rounded-full text-gray-300 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-600 dark:hover:text-yellow-500"
+                data-rating="4"
+                src="https://dtlmselementor.wpengine.com/wp-content/plugins/wp-postratings/images/stars/rating_half.gif"
+                alt="vote">
+            </div>
+            <span id="rating-info" class="text-[#808080] text-sm font-open">(<b>3</b> votes, average:
+              <b>4.33</b> out of 5)</span>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex flex-col gap-4 mx-auto ">
+        <div class="h-fit group">
+          <div class="relative overflow-hidden">
+            <img class="image-card  object-cover w-auto z-0 hover:scale-110"
+              src="./assests/images/Courses-listing-image-1.jpg" alt="${item.course}" />
+            <div
+              class="absolute h-full w-full bg-[#838C48]/80 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <button
+                class="details border-2 border-white hover:text-black hover:bg-white duration-500 ease-in-out bg-transparent text-white py-2 px-5"
+                data-id="${item.id}">VIEW COURSE</button>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-[#DA853D] text-xl font-open !important">Free</h3>
+        <h3 class="text-[#333333] text-xl font-serif hover:text-[#DA853D] !important">Power Electronics</h3>
+        <div class="flex flex-row gap-2 items-center">
+          <a href="#" class="text-[#777777] text-sm font-open hover:text-[#DA853D]">Education</a>
+          <div class="border border-[#777777] h-[15px]"></div>
+          <a class="text-[#777777] text-sm font-open">7 Curriculum</a>
+        </div>
+        <div class="border border-black w-full"></div>
+        <div class="flex flex-col">
+          <div class="py-2 pl-2 flex flex-row items-center gap-2">
+            <i class="fa-regular fa-clock"></i>
+            <span class="font-serif text-[#303030]">1d 1h 50m</span>
+          </div>
+          <div class="flex flex-row">
+            <div class="flex items-center pr-1" id="star-container">
+              <img
+                class="star size-5 inline-flex justify-center items-center text-2xl rounded-full text-gray-300 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-600 dark:hover:text-yellow-500"
+                data-rating="1"
+                src="https://dtlmselementor.wpengine.com/wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
+                alt="vote">
+              <img
+                class="star size-5 inline-flex justify-center items-center text-2xl rounded-full text-gray-300 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-600 dark:hover:text-yellow-500"
+                data-rating="2"
+                src="https://dtlmselementor.wpengine.com/wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
+                alt="vote">
+              <img
+                class="star size-5 inline-flex justify-center items-center text-2xl rounded-full text-gray-300 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-600 dark:hover:text-yellow-500"
+                data-rating="3"
+                src="https://dtlmselementor.wpengine.com/wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
+                alt="vote">
+              <img
+                class="star size-5 inline-flex justify-center items-center text-2xl rounded-full text-gray-300 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-600 dark:hover:text-yellow-500"
+                data-rating="4"
+                src="https://dtlmselementor.wpengine.com/wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
+                alt="vote">
+              <img
+                class="star size-5 inline-flex justify-center items-center text-2xl rounded-full text-gray-300 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-600 dark:hover:text-yellow-500"
+                data-rating="4"
+                src="https://dtlmselementor.wpengine.com/wp-content/plugins/wp-postratings/images/stars/rating_half.gif"
+                alt="vote">
+            </div>
+            <span id="rating-info" class="text-[#808080] text-sm font-open">(<b>3</b> votes, average:
+              <b>4.33</b> out of 5)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 
 </body>
 <footer>
-    <!-- footer top -->
-    <section class="relative px-4 md:px-8 pb-1 pt-12 text-black bg-beLight">
-      <div
-        class="absolute left-1/2 top-0 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-beMain p-2">
-        <img src="./assests/images/lms-logo.png" alt="Logo">
-      </div>
-      <div class="mx-auto max-w-screen-xl py-11">
-        <div class="mx-6 flex flex-wrap justify-between">
-          <!-- Column 1 -->
-          <div class="order-first md:mb-10 lg:mb-16 w-full px-6 text-center md:w-full lg:mx-0 lg:w-1/4 lg:text-left">
-            <h3 data-i18n="footer.col1-title" class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
-            <p data-i18n="footer.col1-param1" class="mb-3 text-[#808080] pt-2 text-sm font-open"></p>
-            <p data-i18n="footer.col1-param2" class="mb-5 text-[#808080] text-sm font-open"></p>
-            <button data-i18n="footer.col1-button"
-              class="rounded border-2 border-xanhMain px-4 py-2 text-xanhMain hover:bg-xanhMain hover:text-white"><span class="text-sm font-open"></span></button>
-          </div>
-          <!-- Column 2 -->
-          <div class="mt-8 w-full px-6 text-center sm:text-left md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
-            <h3 data-i18n="footer.col2-title" class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
-            <ul class="text-sm text-gray-400">
-              <li class="mb-2 border-b border-gray-400 py-2">
-                <a data-i18n="footer.col2-param1" href="#" class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
-                <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
-              </li>
-              <li class="mb-2 border-b border-gray-400 pb-2">
-                <a data-i18n="footer.col2-param2" href="#" class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
-                <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
-              </li>
-              <li class="mb-2">
-                <a data-i18n="footer.col2-param3" href="#" class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
-                <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
-              </li>
-            </ul>
-          </div>
-          <!-- Column 3 -->
-          <div class="mt-8 h-full w-full px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
-            <h3 data-i18n="footer.col3-title" class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
-            <ul class="text-sm text-gray-400">
-              <li data-i18n="footer.col3-param1" class="mb-2 border-b border-gray-400 py-2">
-                <a href="#" class="text-[#808080] hover:text-xanhMain"></a>
-              </li>
-              <li data-i18n="footer.col3-param2" class="mb-2 border-b border-gray-400 py-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
-              <li data-i18n="footer.col3-param3" class="mb-2 border-b border-gray-400 py-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
-              <li data-i18n="footer.col3-param4" class="mb-2 border-b border-gray-400 py-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
-              <li data-i18n="footer.col3-param5" class="mb-2 pt-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
-            </ul>
-          </div>
-          <!-- Column 4 -->
-          <div class="mt-8 h-full w-[240px] px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
-            <h3 data-i18n="footer.col4-title" class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
-            <ul class="text-sm text-gray-400 md:w-[90%] lg:w-[70%]">
-              <li class="mb-2 border-b border-gray-400 py-2 flex">
-                <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-location-arrow"></i></span>
-                <span data-i18n="footer.col4-param" class="text-[#808080] pl-2 text-sm font-open"></span>
-              </li>
-              <li class="mb-2 border-b border-gray-400 py-2">
-                <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-phone"></i></span>
-                <a href="tel:+11276542233"><span class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">+11 (2) 7654
-                    2233</span></a>
-              </li>
-              <li class="mb-2 border-b border-gray-400 py-2">
-                <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-fax"></i></span><a href="tel:+11576542244"><span
-                    class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">+11 (5) 7654 2244</span></a>
-              </li>
-              <li class="mb-2">
-                <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-envelope"></i></span><a
-                  href="mailto:lms@gmail.com"><span
-                    class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">lms@gmail.com</span></a>
-              </li>
-            </ul>
-          </div>
+  <!-- footer top -->
+  <section class="relative px-4 md:px-8 pb-1 pt-12 text-black bg-beLight">
+    <div
+      class="absolute left-1/2 top-0 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-beMain p-2">
+      <img src="./assests/images/lms-logo.png" alt="Logo">
+    </div>
+    <div class="mx-auto max-w-screen-xl py-11">
+      <div class="mx-6 flex flex-wrap justify-between">
+        <!-- Column 1 -->
+        <div class="order-first md:mb-10 lg:mb-16 w-full px-6 text-center md:w-full lg:mx-0 lg:w-1/4 lg:text-left">
+          <h3 data-i18n="footer.col1-title"
+            class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+          <p data-i18n="footer.col1-param1" class="mb-3 text-[#808080] pt-2 text-sm font-open"></p>
+          <p data-i18n="footer.col1-param2" class="mb-5 text-[#808080] text-sm font-open"></p>
+          <button data-i18n="footer.col1-button"
+            class="rounded border-2 border-xanhMain px-4 py-2 text-xanhMain hover:bg-xanhMain hover:text-white"><span
+              class="text-sm font-open"></span></button>
+        </div>
+        <!-- Column 2 -->
+        <div class="mt-8 w-full px-6 text-center sm:text-left md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
+          <h3 data-i18n="footer.col2-title"
+            class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+          <ul class="text-sm text-gray-400">
+            <li class="mb-2 border-b border-gray-400 py-2">
+              <a data-i18n="footer.col2-param1" href="#"
+                class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
+              <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+            </li>
+            <li class="mb-2 border-b border-gray-400 pb-2">
+              <a data-i18n="footer.col2-param2" href="#"
+                class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
+              <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+            </li>
+            <li class="mb-2">
+              <a data-i18n="footer.col2-param3" href="#"
+                class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
+              <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+            </li>
+          </ul>
+        </div>
+        <!-- Column 3 -->
+        <div class="mt-8 h-full w-full px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
+          <h3 data-i18n="footer.col3-title"
+            class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+          <ul class="text-sm text-gray-400">
+            <li data-i18n="footer.col3-param1" class="mb-2 border-b border-gray-400 py-2">
+              <a href="#" class="text-[#808080] hover:text-xanhMain"></a>
+            </li>
+            <li data-i18n="footer.col3-param2" class="mb-2 border-b border-gray-400 py-2"><a href="#"
+                class="text-[#808080] hover:text-xanhMain"></a></li>
+            <li data-i18n="footer.col3-param3" class="mb-2 border-b border-gray-400 py-2"><a href="#"
+                class="text-[#808080] hover:text-xanhMain"></a></li>
+            <li data-i18n="footer.col3-param4" class="mb-2 border-b border-gray-400 py-2"><a href="#"
+                class="text-[#808080] hover:text-xanhMain"></a></li>
+            <li data-i18n="footer.col3-param5" class="mb-2 pt-2"><a href="#"
+                class="text-[#808080] hover:text-xanhMain"></a></li>
+          </ul>
+        </div>
+        <!-- Column 4 -->
+        <div class="mt-8 h-full w-[240px] px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
+          <h3 data-i18n="footer.col4-title"
+            class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+          <ul class="text-sm text-gray-400 md:w-[90%] lg:w-[70%]">
+            <li class="mb-2 border-b border-gray-400 py-2 flex">
+              <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-location-arrow"></i></span>
+              <span data-i18n="footer.col4-param" class="text-[#808080] pl-2 text-sm font-open"></span>
+            </li>
+            <li class="mb-2 border-b border-gray-400 py-2">
+              <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:+11276542233"><span class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">+11 (2)
+                  7654
+                  2233</span></a>
+            </li>
+            <li class="mb-2 border-b border-gray-400 py-2">
+              <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-fax"></i></span><a
+                href="tel:+11576542244"><span class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">+11 (5)
+                  7654 2244</span></a>
+            </li>
+            <li class="mb-2">
+              <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-envelope"></i></span><a
+                href="mailto:lms@gmail.com"><span
+                  class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">lms@gmail.com</span></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- footer bottom -->
-    <section class="md:flex md:justify-between md:items-center bg-xanhMain py-7 px-8 text-white lg:px-28">
-      <div class="mb-4 flex justify-center md:block lg:flex items-center sm:mb-0">
-        <div class="flex">
-          <p class="text-sm font-open">Copyright © 2020 LMS Theme All Rights Reserved</p>
-          <span class="mx-4 h-4 border-r-2 text-sm font-open"></span>
-        </div>
-        <p>Design Themes</p>
+    </div>
+  </section>
+  <!-- footer bottom -->
+  <section class="md:flex md:justify-between md:items-center bg-xanhMain py-7 px-8 text-white lg:px-28">
+    <div class="mb-4 flex justify-center md:block lg:flex items-center sm:mb-0">
+      <div class="flex">
+        <p class="text-sm font-open">Copyright © 2020 LMS Theme All Rights Reserved</p>
+        <span class="mx-4 h-4 border-r-2 text-sm font-open"></span>
       </div>
-      <div class="flex justify-center space-x-4 mt-4 md:mt-0 sm:gap-5">
-        <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i class="fa-brands fa-twitter"></i></i></a></span>
-        <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i class="fa-brands fa-youtube"></i></a></span>
-        <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i class="fa-brands fa-facebook-f"></i></a></span>
-        <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i class="fa-brands fa-skype"></i></a></span>
-      </div>
-    </section>
-  </footer>
+      <p>Design Themes</p>
+    </div>
+    <div class="flex justify-center space-x-4 mt-4 md:mt-0 sm:gap-5">
+      <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i
+            class="fa-brands fa-twitter"></i></i></a></span>
+      <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i
+            class="fa-brands fa-youtube"></i></a></span>
+      <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i
+            class="fa-brands fa-facebook-f"></i></a></span>
+      <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i
+            class="fa-brands fa-skype"></i></a></span>
+    </div>
+  </section>
+</footer>
+
 <script>
-    AOS.init();
-  </script>
-  <script src="js/home.js"></script>
-  <script defer>
-    window.onload = function () {
-      var translator = new Translator({
-        filesLocation: "../languages",
-      });
+  AOS.init();
+</script>
+<script src="js/home.js"></script>
 
-      var savedLanguage = localStorage.getItem("selectedLanguage") || "vi";
-      var languageSelect = document.getElementById("languageSelect");
-      languageSelect.value = savedLanguage;
+<script defer>
+  window.onload = function () {
+    var translator = new Translator({
+      filesLocation: "../languages",
+    });
 
-      function updateLanguage(newLanguage) {
-        translator.translatePageTo(newLanguage);
-        localStorage.setItem("selectedLanguage", newLanguage);
-      }
+    var savedLanguage = localStorage.getItem("selectedLanguage") || "vi";
+    var languageSelect = document.getElementById("languageSelect");
+    languageSelect.value = savedLanguage;
 
-      translator.fetch(["vi", "en"]).then(() => {
-        translator.translatePageTo(savedLanguage);
-      });
+    function updateLanguage(newLanguage) {
+      translator.translatePageTo(newLanguage);
+      localStorage.setItem("selectedLanguage", newLanguage);
+    }
 
-      languageSelect.addEventListener("change", function () {
-        updateLanguage(languageSelect.value);
-      });
-    };
-  </script>
+    translator.fetch(["vi", "en"]).then(() => {
+      translator.translatePageTo(savedLanguage);
+    });
+
+    languageSelect.addEventListener("change", function () {
+      updateLanguage(languageSelect.value);
+    });
+  };
+</script>
+
 </html>

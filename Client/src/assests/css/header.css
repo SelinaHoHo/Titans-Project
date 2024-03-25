@@ -76,11 +76,13 @@ body {}
 
 .sub-menu {
   top: calc(100% + 0px);
+  z-index: 100000000000;
 }
 
 
 .sub-menu a{
   transition: background-color 600ms ease;
+  
 }
 
 /* .hover-right:hover {
