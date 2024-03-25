@@ -2,65 +2,72 @@
   "courses": [
     {
       "id": 1,
+      "name": "Mathematics Course",
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-1.jpg",
       "cost": "Free",
       "subject": "Mathematics",
       "numberOfCurriculum": 10,
-      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
+      "description": "Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "15/20/0"
     },
     {
       "id": 2,
+      "name": "Science Course",
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-2.jpg",
       "cost": "Free",
       "subject": "Science",
       "numberOfCurriculum": 8,
-      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
+      "description": "Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "10/10/30"
     },
     {
       "id": 3,
+      "name": "Education Course",
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-3.jpg",
       "cost": "Free",
-      "subject": "History",
+      "subject": "Education",
       "numberOfCurriculum": 12,
-      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
+      "description": "Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "20/0/45"
     },
     {
       "id": 4,
+      "name": "Engineering Course",
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-3.jpg",
       "cost": "Free",
-      "subject": "History",
+      "subject": "Engineering",
       "numberOfCurriculum": 12,
-      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
+      "description": "Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "20/0/45"
     },
     {
       "id": 5,
+      "name": "Health Course",
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-2.jpg",
       "cost": "50",
-      "subject": "Science",
+      "subject": "Health",
       "numberOfCurriculum": 8,
-      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
+      "description": "Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "10/10/30"
     },
     {
       "id": 6,
+      "name": "Law Course",
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-3.jpg",
       "cost": "50",
-      "subject": "History",
+      "subject": "Law",
       "numberOfCurriculum": 12,
-      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
+      "description": "Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "20/0/45"
     },
     {
       "id": 7,
+      "name": "Mathematics Course with Cost",
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2017/11/Courses-listing-image-3.jpg",
       "cost": "50",
-      "subject": "History",
+      "subject": "Mathematics",
       "numberOfCurriculum": 12,
-      "description":"Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
+      "description": "Donec eu congue sem. Fusce ut eu est semper augue accumsan. Integer consequat ultricies arcu a feugiat. In hac habitasse platea dictumst. Donec vel efficitur mauris, et tempor ipsum",
       "duration": "20/0/45"
     }
   ],

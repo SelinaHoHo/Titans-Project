@@ -53,26 +53,36 @@
     "step04": "Bước 04",
     "purchase ": "Mua khóa học"
   },
-  "course-template":{
-    "title-section":{
+  "course-template": {
+    "title-section": {
       "title": "Mẫu Khóa Học",
       "home": "Trang chủ",
       "template": "Mẫu khóa học"
     },
-    "course-category":{
+    "course-category": {
       "title": "Loại khóa học"
     },
-    "cost-filter":{
+    "cost-filter": {
       "title": "Phí"
     },
-    "date-filter":{
+    "date-filter": {
       "title": "Ngày bắt đầu"
     },
-    "button":{
-      "button-grid": "Lưới",
-      "button-col": "Cột"
+    "button": {
+      "button-grid": "<i class='fa-solid fa-grip'></i> Lưới",
+      "button-col": "<i class='fa-solid fa-list'></i> Cột"
+    },
+    "radio": {
+      "all": "Tất cả",
+      "free": "Miễn phí",
+      "paid": "Có phí"
+    },
+    "checkBox": {
+      "education": "Giáo dục",
+      "engineering": "Kỹ thuật",
+      "health": "Y tế",
+      "law": "Luật",
+      "mathematics": "Toán học"
     }
   }
-
 }
-
