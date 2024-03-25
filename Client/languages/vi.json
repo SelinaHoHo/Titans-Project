@@ -84,5 +84,14 @@
       "law": "Luật",
       "mathematics": "Toán học"
     }
+  },
+"teacherPage": {
+  "title": "Giáo viên",
+  "subtitle1": "Trang chủ",
+  "subtitle2": "Giáo viên",
+  "sidebar-title1": "Danh mục",
+  "sidebar-title2": "Bình luận gần đây",
+  "sidebar-title3": "Bài viết cũ",
+  "sidebar-title4": "Thẻ"
   }
 }

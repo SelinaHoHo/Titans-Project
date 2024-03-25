@@ -84,5 +84,14 @@
       "law": "Law",
       "mathematics": "Mathematics"
     }
+  },
+  "teacherPage": {
+    "title": "Teachers",
+    "subtitle1": "Home",
+    "subtitle2": "Teacher",
+    "sidebar-title1": "Categories",
+    "sidebar-title2": "Recent Comments",
+    "sidebar-title3": "Archives",
+    "sidebar-title4": "Tags"
   }
 }

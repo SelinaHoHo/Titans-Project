@@ -57,6 +57,11 @@ server.get("/courses", (req, res, next) => {
   });
 });
 
+server.get("/teacher", (res) => {
+  let data = router.db.get("teacher").value();
+  res.json(data);
+});
+
 server.get("/search/courses", (req, res, next) => {
   const queryParams = req.query;
   let data = router.db.get("courses").value();
