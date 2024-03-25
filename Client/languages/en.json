@@ -40,5 +40,17 @@
     "col3-param4": "> Privacy Policy",
     "col3-param5": "> Terms of Use",
     "col4-param": "The Design Themes Inc. Mary Jane St, Sydney 2233 Australia."
+  },
+  "ourProcess": {
+    "title": "OUR PROCESS",
+    "step01": "Step 01",
+    "searchCourse": "Search for your course",
+    "param": "For no one avoids or hates or runs away from pleasure because it is pleasure, but because great things result.",
+    "step02": "Step 02",
+    "takeLesson": "Take a Sample Lesson",
+    "step03": "Step 03",
+    "syllabus": "Preview the Syllabus",
+    "step04": "Step 04",
+    "purchase ": "Purchase the Course"
   }
 }

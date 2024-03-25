@@ -40,5 +40,17 @@
     "col3-param4": "> Chính Sách Bảo Mật",
     "col3-param5": "> Điều Khoản Sử Dụng",
     "col4-param": "Công Ty Thiết Kế Themes Inc. Mary Jane St, Sydney 2233 Úc."
+  },
+  "ourProcess": {
+    "title": "QUY TRÌNH CỦA CHÚNG TÔI",
+    "step01": "Bước 01",
+    "searchCourse": "Tìm kiếm khóa học của bạn",
+    "param": "Vì không ai tránh né, ghét bỏ hay chạy trốn niềm vui vì đó là niềm vui, mà vì kết quả là những điều tuyệt vời.",
+    "step02": "Bước 02",
+    "takeLesson": "Học một bài học mẫu",
+    "step03": "Bước 03",
+    "syllabus": "Xem trước giáo trình",
+    "step04": "Bước 04",
+    "purchase ": "Mua khóa học"
   }
 }
