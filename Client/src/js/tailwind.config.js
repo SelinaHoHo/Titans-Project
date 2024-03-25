@@ -28,5 +28,5 @@ tailwind.config = {
           'inTouch': "url('../src/assests/images/newsletter-parallax.png')",
         }
       },
-    }
+    },
   }

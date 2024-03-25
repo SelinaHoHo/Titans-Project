@@ -41,6 +41,23 @@ function animateNumber(
 
 // headers
 
+function showSidebar() {
+  var sidebar = document.querySelector(".sidebar");
+  sidebar.classList.add("show");
+  var overlay = document.querySelector(".overlay");
+  overlay.classList.add("show");
+}
+
+function hideSidebar() {
+  var sidebar = document.querySelector(".sidebar");
+  sidebar.classList.remove("show");
+  var overlay = document.querySelector(".overlay");
+  overlay.classList.remove("show");
+}
+//
+
+
+
   const event1 = document.querySelector('.event-1');
   const event2 = document.querySelector('.event-2');
   const arrowBacks = document.querySelectorAll('.arrow-back');
