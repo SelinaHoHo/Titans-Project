@@ -52,5 +52,37 @@
     "syllabus": "Preview the Syllabus",
     "step04": "Step 04",
     "purchase ": "Purchase the Course"
+  },
+  "course-template":{
+    "title-section":{
+      "title": "Course Template",
+      "home": "Home",
+      "template": "Course Template"
+    },
+    "course-category":{
+      "title": "Course Category"
+    },
+    "cost-filter":{
+      "title": "Cost"
+    },
+    "date-filter":{
+      "title": "Start Date"
+    },
+    "button":{
+      "button-grid": "<i class='fa-solid fa-grip'></i> Grid",
+      "button-col": "<i class='fa-solid fa-list'></i> Column"
+    },
+    "radio":{
+      "all": "All",
+      "free": "Free",
+      "paid": "Paid"
+    },
+    "checkBox":{
+      "education": "Education",
+      "engineering": "Engineering",
+      "health": "Health",
+      "law": "Law",
+      "mathematics": "Mathematics"
+    }
   }
 }
