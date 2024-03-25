@@ -1,0 +1,49 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "cateName": "Chống Nắng",
+      "description": "Bảo vệ da người dùng khỏi ánh nắng mặt trời"
+    },
+    {
+      "id": 2,
+      "cateName": "Tẩy Trang",
+      "description": "Tẩy đi bụi bẩn và các chất hoá học trên da"
+    },
+    {
+      "id": 3,
+      "cateName": "Sữa Rửa Mặt",
+      "description": "Tẩy đi bụi bẩn và các chất hoá học trên da"
+    },
+    {
+      "id": 5,
+      "cateName": "Nước Cân Bằng",
+      "description": "Giúp cân bằng độ ẩm và độ PH trên da"
+    },
+    {
+      "id": 6,
+      "cateName": "Kem Dưỡng",
+      "description": "Cung cấp cho da nhiều vitamin, giúp da chắc khoẻ và sáng mịn"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "cateName": "OJT",
+      "description": "lorem ipsum dolor sit amet"
+    },
+    {
+      "id": 2,
+      "categoryId": 2,
+      "cateName": "NestJs",
+      "description": "lorem ipsum dolor sit amet"
+    },
+    {
+      "id": 3,
+      "categoryId": 3,
+      "cateName": "ReactJS",
+      "description": "lorem ipsum dolor sit amet"
+    }
+  ]
+}
