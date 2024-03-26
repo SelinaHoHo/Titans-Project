@@ -397,6 +397,7 @@
           <li>
             <a href="#" title="login" class="" onclick="return false">
               <i class="fa-solid fa-user {{ sm:p-2 }} inline-block rounded border-2 border-black"></i>
+              </a>
           </li>
           <li>
             <a href="#" title="login" class=""> Login </a>
@@ -559,45 +560,683 @@
   </div>
 
   <div class="flex flex-col lg:mx-28 lg:flex-row sm:mx-8 mb-10">
-    <div class="lg:w-[70%]   sm:w-[100%] border-2 h-[100px] flex">
-      <button id="prevBtn" class="px-4 py-2 bg-gray-200 text-gray-700">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
-      <div class="flex overflow-hidden w-auto" id="tabContainer">
-        <!-- Tab buttons -->
-        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
-          <i class="fa-solid fa-book"></i>
-          <div class="pl-2">Curriculum</div>
+     <div class="lg:w-[70%] md:w-[70%] sm:w-[100%]">
+        <div class="h-[70px] flex">
+          <button id="prevBtn" class="px-4 py-2 bg-[#f5e9d4] text-gray-700">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div
+            class="flex overflow-hidden w-auto bg-[#f5e9d4]"
+            id="tabContainer"
+          >
+            <!-- Tab buttons -->
+            <div
+              id="Curriculum"
+              class="flex items-center justify-center px-4 py-2  cursor-pointer bg-[#838c48] text-white transition duration-500"
+            >
+              <i class="fa-solid fa-book"></i>
+              <div class="pl-2">Curriculum</div>
+            </div>
+
+            <div
+              id="About"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-brands fa-docker"></i>
+              <div class="pl-2">About</div>
+            </div>
+            <div
+              id="Members"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-solid fa-user"></i>
+              <div class="pl-2">Members</div>
+            </div>
+            <div
+              id="Instructors"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <div class="pl-2">Instructors</div>
+            </div>
+            <div
+              id="Group"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-solid fa-user-group"></i>
+              <div class="pl-2">Group</div>
+            </div>
+
+            <div
+              id="News"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-solid fa-newspaper"></i>
+              <div class="pl-2">News</div>
+            </div>
+
+            <div
+              id="Reviews"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-solid fa-star"></i>
+              <div class="pl-2">Reviews</div>
+            </div>
+          </div>
+
+          <button id="nextBtn" class="px-4 py-2 text-gray-700 bg-[#f5e9d4]">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
-        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
-          <i class="fa-solid fa-book"></i>
-          <div class="pl-2">Curriculum</div>
+
+        <div id="curriculumContent" style="display: block">
+          <h1 class="font-open text-xl font-semibold py-[20px]">CURRICULUM</h1>
+
+          <div class="border-4 border-[#f5e9d4] w-[100%] md:w-[99%] p-4">
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Aliquam Massa Turpis
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 2 hrs</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Cras Pharetra Nisl Et Magna
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 30 mins</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Nullam Vestibulum Eros
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 20 mins</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Placerat Odio Eu
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 2 hrs</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Aliquam Dolor Non
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 30 mins</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Fill In The Blank Questions
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 30 mins</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Questions With Images
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 20 hrs</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
-          <i class="fa-solid fa-book"></i>
-          <div class="pl-2">Curriculum</div>
+
+        <div id="aboutContent" style="display: none">
+          <p class="font-open text-base my-8 text-[#808080] pr-2">
+            Ut ac euismod velit. Aliquam condimentum dolor accumsan, venenatis
+            sapien eu, egestas nunc. Suspendisse euismod semper fermentum. Nulla
+            eleifend nibh pretium mattis dapibus. Morbi blandit enim turpis, et
+            vestibulum orci fermentum in. Vestibulum sodales lectus dolor, vitae
+            suscipit ante volutpat dignissim. Nulla metus lectus, vestibulum in
+            fermentum id, lobortis vitae eros. Vivamus sed accumsan metus.
+            Pellentesque pretium leo sapien, vel commodo est feugiat non.
+            Aliquam id nulla feugiat, auctor lacus ut, tristique lectus.
+            Praesent ac fringilla mi. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Etiam sed dui ultrices,
+            iaculis tellus non, bibendum nisl. Cras id sollicitudin neque. Duis
+            sed ipsum nunc. Vivamus nec neque ac nulla malesuada semper a id
+            leo. Donec condimentum auctor malesuada. Nullam dapibus in tellus
+            nec aliquam. Aliquam nibh tortor, volutpat sit amet dapibus viverra,
+            convallis sit amet turpis. Phasellus ac enim et odio auctor posuere.
+            Donec pulvinar, urna ut molestie suscipit, magna mauris posuere
+            tortor, nec feugiat lacus nulla eu odio. Suspendisse potenti. Nunc
+            at sem vitae mi bibendum consectetur. Cras eget feugiat enim. Nunc
+            consequat nibh sit amet ipsum ornare, vitae suscipit ipsum blandit.
+            Nulla rhoncus est id sem fringilla iaculis. Proin dapibus sed elit
+            id scelerisque. Etiam sed tempor sem, sed auctor felis. Fusce in
+            metus lacus. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Donec suscipit porta lacus, sed commodo ante luctus
+            ullamcorper. Aliquam ornare tincidunt nulla sit amet vestibulum.
+            Fusce venenatis odio ac quam aliquam lobortis. Nulla porttitor,
+            lacus vel dapibus adipiscing, augue odio tristique ligula, quis
+            porta velit lectus ac est. Proin sit amet leo at lorem iaculis
+            interdum. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Nullam sed odio tortor.
+          </p>
         </div>
-        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
-          <i class="fa-solid fa-book"></i>
-          <div class="pl-2">Curriculum</div>
+
+        <div id="membersContent" style="display: none">
+          <h1 class="font-open text-xl font-semibold py-[20px]">MEMBERS</h1>
+
+          <div class="flex font-serif">
+            <h2 class="text-base">Total number of Students in this course :</h2>
+            <p class="text-base font-bold pl-4">13</p>
+          </div>
+
+          <div class="flex flex-wrap gap-5">
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
-          <i class="fa-solid fa-book"></i>
-          <div class="pl-2">Curriculum</div>
+
+        <div id="instructorsContent" style="display: none">
+          <h1 class="font-open text-xl font-semibold py-[20px]">INSTRUCTORS</h1>
+
+          <div class="flex sm:flex-row flex-col gap-5">
+            <div
+              class="w-[100%] md:w[40%] p-2 bg-[#f5e9d4] flex flex-col items-center justify-center hover:text-white hover:bg-[#838c48] transition duration-500"
+            >
+              <img
+                src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-2.jpg"
+                alt="avatar"
+              />
+              <div class="pt-8 text-[#da543d] text-base font-semibold">
+                JAMES CATWIN
+              </div>
+              <div class="text-sm pt-2">Art Director</div>
+              <div class="border-b-10 border-[#838c48] py-4"></div>
+              <div class="flex gap-5 mb-2">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+
+            <div
+              class="w-[100%] md:w[40%] p-2 bg-[#f5e9d4] flex flex-col items-center justify-center hover:text-white hover:bg-[#838c48] transition duration-500"
+            >
+              <img
+                src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-2.jpg"
+                alt="avatar"
+              />
+              <div class="pt-8 text-[#da543d] text-base font-semibold">
+                JAMES CATWIN
+              </div>
+              <div class="text-sm pt-2">Art Director</div>
+              <div class="border-b-10 border-[#838c48] py-4"></div>
+              <div class="flex gap-5 mb-2">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
-          <i class="fa-solid fa-book"></i>
-          <div class="pl-2">Curriculum</div>
+
+        <div id="groupContent" style="display: none">
+          <h1 class="font-serif font-bold mt-8 text-xl">GROUP</h1>
+          <h2 class="font-serif text-base text-[#808080] mt-2">
+            No group assigned for this course!
+          </h2>
         </div>
-        <div class="flex items-center justify-center px-4 py-2 bg-gray-200 text-gray-700">
-          <i class="fa-solid fa-book"></i>
-          <div class="pl-2">Curriculum</div>
+
+        <div id="newsContent" style="display: none">
+          <h1 class="font-open text-xl font-semibold py-[20px]">NEWS</h1>
+
+          <div class="flex flex-col md:flex-row">
+            <figure class="w-[100%] md:w-[50%]">
+              <img
+                src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/blog15.jpg"
+                alt="News image"
+              />
+            </figure>
+
+            <div class="p-4 w-[100%] md:w-[50%]">
+              <div
+                class="text-xl font-semibold font-serif text-[#000000] hover:text-[#DA853D] transition duration-500"
+              >
+                Image – Minus id quod
+              </div>
+              <div class="flex items-center text-[#DA853D]">
+                <i class="fa-solid fa-calendar"></i>
+                <div class="pl-2">24 Fri</div>
+              </div>
+
+              <p class="pt-2 text-lg text-gray-500">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. Nam libero tempore, cum soluta nobis est
+                eligendi optio cumque nihil impedit quo
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="reviewsContent" style="display: none">
+          <h1 class="font-open text-xl font-semibold py-[20px]">REVIEWS</h1>
+
+          <div class="flex flex-col">
+            <div class="flex flex-col md:flex-row py-4">
+              <div class="flex flex-col items-center justify-center mx-16">
+                <div class="text-[#000000] text-9xl font-semibold mb-2.5">
+                  0
+                </div>
+                <div class="text-yellow-500 flex gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="text-lg text-[#808080] py-2">1 Review</div>
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row items-center mt-2">
+                  <div class="mr-4 text-[#888987]">1 Stars</div>
+                  <div class="border-4 border-[#f5e9d4] w-[80%]"></div>
+
+                  <div class="ml-2 text-[#888987] text-lg">0</div>
+                </div>
+
+                <div class="flex flex-row items-center mt-2">
+                  <div class="mr-4 text-[#888987] text-base">2 Stars</div>
+                  <div class="border-4 border-[#f5e9d4] w-[80%]"></div>
+
+                  <div class="ml-2 text-[#888987] text-base">0</div>
+                </div>
+
+                <div class="flex flex-row items-center mt-2">
+                  <div class="mr-4 text-[#888987] text-base">3 Stars</div>
+                  <div class="border-4 border-[#f5e9d4] w-[80%]"></div>
+
+                  <div class="ml-2 text-[#888987] text-base">0</div>
+                </div>
+
+                <div class="flex flex-row items-center mt-2">
+                  <div class="mr-4 text-[#888987] text-base">4 Stars</div>
+                  <div class="border-4 border-[#f5e9d4] w-[80%]"></div>
+
+                  <div class="ml-2 text-[#888987] text-base">0</div>
+                </div>
+
+                <div class="flex flex-row items-center mt-2">
+                  <div class="mr-4 text-[#888987] text-base">5 Stars</div>
+                  <div class="border-4 border-[#f5e9d4] w-[80%]"></div>
+
+                  <div class="ml-2 text-[#888987] text-base">0</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-4 text-xl font-open font-semibold">COMMENTS (1)</div>
+
+            <div class="py-2 flex font-open">
+              <figure class="w-[5%]">
+                <img
+                  src="https://secure.gravatar.com/avatar/7fc6ccfdd919319ec9dc75839c627608?s=50&d=mm&r=g"
+                  alt="avt"
+                  class="w-10 h-10 rounded-full"
+                />
+              </figure>
+              <div class="p-2 w-[95%]">
+                <div><strong class="text-[#808080]">dummy</strong> says</div>
+                <div class="text-[#303030]">30 Thu at 8:49 am</div>
+                <div class="text-[#808080] py-2 font-bold">Test</div>
+                <div class="text-[#808080]">
+                  Ut ac euismod velit. Aliquam condimentum dolor accumsan,
+                  venenatis sapien eu, egestas nunc. Suspendisse euismod semper
+                  fermentum. Nulla eleifend nibh pretium mattis dapibus. Morbi
+                  blandit enim turpis, et vestibulum orci fermentum in.
+                  Vestibulum sodales lectus dolor
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center">
+              <div class="border-b-2 border-[#f5e9d4] w-[85%]"></div>
+              <div
+                class="px-4 py-2 bg-[#838c48] hover:bg-[#da853d] transition duration-500 text-white"
+              >
+                Reply
+              </div>
+            </div>
+
+            <div class="py-4 text-xl font-open font-semibold">
+              LEAVE A REPLY
+            </div>
+            <div class="text-[#808080]">
+              Your email address will not be published. Required fields are
+              marked *
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-5 mt-4">
+              <span class="w-[100%] md:w-[30%]">
+                <div class="mb-2 text-[#808080]">Your Name</div>
+                <input class="w-full h-14 border p-2" />
+              </span>
+
+              <span class="w-[100%] md:w-[30%]">
+                <div class="mb-2 text-[#808080]">Your Email</div>
+                <input class="w-full h-14 border p-2" />
+              </span>
+
+              <span class="w-[100%] md:w-[30%]">
+                <div class="mb-2 text-[#808080]">Your Phone</div>
+                <input class="w-full h-14 border p-2" />
+              </span>
+            </div>
+
+            <span class="w-[100%] md:w-[95%] py-8">
+              <div class="mb-2 text-[#808080]">Title</div>
+              <input class="h-14 border p-2 w-full" />
+            </span>
+
+            <div>
+              <div class="mb-2 text-[#808080]">Ratings</div>
+              <div class="text-yellow-500">
+                <i class="fa-regular fa-star fa-xs"></i>
+                <i class="fa-regular fa-star fa-xs"></i>
+                <i class="fa-regular fa-star fa-xs"></i>
+                <i class="fa-regular fa-star fa-xs"></i>
+                <i class="fa-regular fa-star fa-xs"></i>
+              </div>
+            </div>
+
+            <div class="py-8 w-[100%] md:w-[95%]">
+              <div class="mb-2 text-[#808080]">Comment *</div>
+              <textarea class="p-2 border w-full"></textarea>
+            </div>
+
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                class="form-checkbox h-3 w-3 text-blue-600"
+              />
+              <div class="pl-2">
+                Save my name, email, and website in this browser for the next
+                time I comment.
+              </div>
+            </div>
+
+            <button
+              class="py-4 px-4 text-white bg-[#838c48] w-[20%] my-2 hover:bg-[#da853d] transition duration-500"
+            >
+              Post Comment
+            </button>
+          </div>
         </div>
       </div>
-      <button id="nextBtn" class="px-4 py-2 bg-gray-200 text-gray-700">
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-    </div>
+
+      <!-- ----------------------- -->
+      <div
+        class="lg:w-[30%] md:w-[30%] sm:w-[100%] border-4 border-[#F5E9D4] px-5 py-6"
+      >
+        <p>Class</p>
+      </div>
+
+
+
     <div class="lg:w-[30%]   sm:w-[100%] px-5">
       <div class="my-5">
         <h1 class=" text-2xl font-medium ">COURSE INFO</h1>
@@ -805,6 +1444,7 @@
 
   </div>
 
+<script src="./js/courseDetails.js"></script>
 
 </body>
 <footer>
@@ -947,5 +1587,10 @@
     });
   };
 </script>
-
+<!-- 
+      languageSelect.addEventListener("change", function () {
+        updateLanguage(languageSelect.value);
+      });
+    };
+  </script> -->
 </html>
