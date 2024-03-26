@@ -5,4 +5,4 @@
 
 [functions]
   directory = “functions”
-  included_files = [“./languages/*”]
+  included_files = [“./languages/vi.json”, “./languages/en.json”]
