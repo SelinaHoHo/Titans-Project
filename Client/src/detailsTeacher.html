@@ -5,22 +5,473 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Detail</title>
+    <link rel="stylesheet" href="./assests/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="./assests/css/output.css"> -->
+    <script src="js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="./assests/css/header.css" />
 </head>
+<header>
+    <div class="bg-beMain py-5 flex justify-center items-center w-[100%] mx-auto">
+        <div class="flex w-[15%]">
+            <div>
+                <a href="./index.html">
+                    <img class="w-full cursor-pointer" src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/lms-logo.png" alt="..." />
+                </a>
+            </div>
+        </div>
 
-<body class="container mx-auto pt-8">
-    <section class="flex flex-col md:flex-row lg:flex-row px-6 md:gap-6">
-        <div class="flex flex-col md:w-1/2 ">
+        <div class="flex flex-wrap justify-end items-center">
+            <div
+                class="nav-links duration-500 md:static absolute md:min-h-fit left-0 md:w-auto sm:w-auto  flex items-center pr-5">
+
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[1.5vw]">
+                    <!-- home -->
+                    <li class="nav-it relative h-[5rem] flex items-center">
+                        <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+                            <p class="">home</p>
+                        </a>
+                        <ul
+                            class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+                            <li>
+                                <a href="./index.html" class="block hover:bg-[#F5E9D4] p-2">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Home-Landing page</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Home-Subscription</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Home-Course-Search</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Home-Zoom Meting</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Home-Kis</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Point System</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- courses -->
+                    <li class="nav-it relative h-[5rem] flex items-center">
+                        <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+                            <p class="">courses</p>
+                        </a>
+                        <ul
+                            class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Courses-template</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Lesson</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Search-Course</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Membership</a>
+                            </li>
+                            <li>
+                                <a href="./CourseDetail.html" class="block hover:bg-[#F5E9D4] p-2">Courses details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- pages -->
+                    <li class="nav-it relative h-[5rem] flex items-center">
+                        <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+                            <p class="">Pages</p>
+                        </a>
+                        <ul
+                            class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">BuddyPress</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Event</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Headers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Side-Navigation</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Teachers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">TeachersProfile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Blog -->
+                    <li class="nav-it relative h-[5rem] flex items-center">
+                        <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+                            <p class="">Blog</p>
+                        </a>
+                        <ul
+                            class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-1/2 transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
+                            <div class="flex grid-cols-2 gap-x-20">
+                                <li>
+                                    <h4 class="p-2 font-bold uppercase">I.Column</h4>
+                                    <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                                        <span></span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Full--Width</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="p-2 font-bold uppercase">II.Column</h4>
+                                    <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                                        <span></span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="p-2 font-bold uppercase">III.Column</h4>
+                                    <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                                        <span></span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="p-2 font-bold uppercase">Thumb image</h4>
+                                    <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                                        <span></span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                                    </div>
+                                </li>
+                            </div>
+                            <div>
+                                <h4 class="p-2 font-bold uppercase">FullWidth image</h4>
+                                <div class="ml-2 border-b-2 w-1/12 border-[#DA853D]">
+                                    <span></span>
+                                </div>
+                                <img src="./assests/images/mega-menu-image-1.png" alt="anh" />
+                            </div>
+                        </ul>
+                    </li>
+                    <!--Gallery  -->
+                    <li class="nav-it relative h-[5rem] flex items-center">
+                        <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+                            <p class="">Gallery</p>
+                        </a>
+                        <ul
+                            class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-[-30%] transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
+                            <div class="flex grid-cols-2 gap-x-20">
+                                <li>
+                                    <h4 class="p-2 font-bold uppercase">I.Column</h4>
+                                    <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                                        <span></span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="p-2 font-bold uppercase">II.Column</h4>
+                                    <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                                        <span></span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="p-2 font-bold uppercase">III.Column</h4>
+                                    <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                                        <span></span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">FullWidth</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Left Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Pagination</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Without Filter</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="p-2 font-bold uppercase">Thumb image</h4>
+                                    <div class="ml-2 border-b-2 w-1/4 border-[#DA853D]">
+                                        <span></span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <form>
+                                            <div class="mb-4">
+                                                <input type="text" id="name" name="name"
+                                                    class="border border-gray-300 rounded-md w-full py-2 px-3 focus:outline-none focus:ring focus:border-blue-500"
+                                                    placeholder="Your Name" required />
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="email" id="email" name="email"
+                                                    class="border border-gray-300 rounded-md w-full py-2 px-3 focus:outline-none focus:ring focus:border-blue-500"
+                                                    placeholder="Your Email" required />
+                                            </div>
+                                            <div class="mb-4">
+                                                <textarea id="message" name="message"
+                                                    class="border border-gray-300 rounded-md w-full py-2 px-3 focus:outline-none focus:ring focus:border-blue-500"
+                                                    placeholder="Your Message" rows="4" required></textarea>
+                                            </div>
+                                            <div class="flex justify-end m-3">
+                                                <button type="submit"
+                                                    class="bg-[#838C48] hover:bg-[#DA853D] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                                    Send Message
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </div>
+
+                        </ul>
+                    </li>
+                    <!--Shop  -->
+                    <li class="nav-it relative h-[5rem] flex items-center">
+                        <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+                            <p class="">Shop</p>
+                        </a>
+                        <ul
+                            class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-[-184%] transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
+                            <div class="grid grid-cols-3 ">
+
+                                <div class="w-3/5">
+                                    <h4 class="p-2 font-bold uppercase">Popular Product</h4>
+                                    <div class="ml-2 border-b-2  w-1/4 border-[#DA853D]"></div>
+                                    <div class="mt-3 ">
+                                        <ul class="bg-[#fdf6ea] py-3">
+                                            <li>
+                                                <div
+                                                    class="flex justify-between items-center mx-2 py-2 border-b-[1px] border-[#b4b4b4]">
+                                                    <div>
+                                                        <span
+                                                            class=" w-9/12 font-bold hover:text-[#838C48] transition duration-300 ease-in-out">Application
+                                                            Development</span>
+                                                        <div class="flex justify-start mt-2 items-center">
+                                                            <p class="line-through opacity-50 ">15.00</p>
+                                                            <p class="text-gray-500">$10.00</p>
+                                                        </div>
+                                                    </div>
+                                                    <img class="border w-[50px]  h-[50px] border-gray-400 p-[3px]"
+                                                        src="./assests/images/nav-image.jpg" alt="">
+                                                </div>
+                                            </li>
+
+
+                                            <li>
+                                                <div
+                                                    class="flex justify-between items-center mx-2 py-2 border-b-[1px] border-[#b4b4b4]">
+                                                    <div>
+                                                        <span
+                                                            class=" w-9/12 font-bold hover:text-[#838C48] transition duration-300 ease-in-out">Application
+                                                            Development</span>
+                                                        <div class="flex justify-start mt-2 items-center">
+                                                            <p class="line-through opacity-50 ">15.00</p>
+                                                            <p class="text-gray-500">$10.00</p>
+                                                        </div>
+                                                    </div>
+                                                    <img class="border w-[50px]  h-[50px] border-gray-400 p-[3px]"
+                                                        src="./assests/images/nav-image.jpg" alt="">
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div
+                                                    class="flex justify-between items-center mx-2 py-2 border-b-[1px] border-[#b4b4b4]">
+                                                    <div>
+                                                        <span
+                                                            class=" w-9/12 font-bold hover:text-[#838C48] transition duration-300 ease-in-out">Application
+                                                            Development</span>
+                                                        <div class="flex justify-start mt-2 items-center">
+                                                            <p class="line-through opacity-50 ">15.00</p>
+                                                            <p class="text-gray-500">$10.00</p>
+                                                        </div>
+                                                    </div>
+                                                    <img class="border w-[50px]  h-[50px] border-gray-400 p-[3px]"
+                                                        src="./assests/images/nav-image.jpg" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="w-3/5">
+                                    <h4 class="p-2 font-bold uppercase">Shop Now</h4>
+                                    <div class="ml-2 border-b-2  w-1/4 border-[#DA853D]"></div>
+                                    <div class="mt-4">
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Shop four column</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Shop Three column</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Shop two column</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Cart</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Check-out</a>
+                                    </div>
+                                </div>
+
+                                <div class="w-3/5">
+                                    <h4 class="p-2 font-bold uppercase">My.Account</h4>
+                                    <div class="ml-2 border-b-2  w-1/4 border-[#DA853D]"></div>
+                                    <div class="mt-4">
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">View Order</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Order received</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">With Right Sidebar</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Edit Account</a>
+                                        <a href="#" class="block hover:bg-[#F5E9D4] p-2">Edit My Address</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </ul>
+                    </li>
+                    <!-- contact -->
+                    <li class="nav-it relative h-[5rem] flex items-center">
+                        <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
+                            <p class="">contact</p>
+                        </a>
+                        <ul
+                            class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Contact-Layout-1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block hover:bg-[#F5E9D4] p-2">Contact-Layout-2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--  -->
+            </div>
+
+            <!--  -->
+            <div class="nav-log flex items-center">
+                <ul class="flex md:flex-row md:items-center  gap-2 sm:items-center items-center ">
+                    <li class="menu-button" onclick="showSidebar()">
+                        <a class="flex items-center" href="#">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                            <span class="ml-2 text-lg {{ sm:text-sm }} ">Menu</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" title="login" class="" onclick="return false">
+                            <i class="fa-solid fa-user {{ sm:p-2 }} inline-block rounded border-2 border-black"></i>
+                    </li>
+                    <li>
+                        <a href="#" title="login" class=""> Login </a>
+                    </li>
+                    <li>
+                        <a href="#" title="login" class=""> <span>|</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" title="register">Register</a>
+                    </li>
+                    <li>
+                        <div class="relative flex">
+                            <i
+                                class="fas fa-globe absolute top-1/2 transform -translate-y-1/2 left-3 text-xanhMain"></i>
+                            <select id="languageSelect"
+                                class="pl-10 pr-4 py-2 rounded-lg border border-xanhMain  bg-white text-gray-900 appearance-none ">
+                                <option value="vi">VI</option>
+                                <option value="en">EN</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<body class="relative bg-beMain">
+    <button type="button" onclick="scrollToTop()"
+        class="bg-xanhMain w-[40px] h-[40px] text-white shadow-md rounded-sm fixed bottom-4 right-4 z-50 hover:bg-[#2B2F10] transition duration-700 ease-in-out">
+        <i class="fa-solid fa-chevron-up"> </i>
+    </button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <section class="flex flex-col bg-[#DA853D] w-full px-8 py-10 md:px-24 mb-12">
+        <h1 class="text-[#FFFFFF] text-center font-serif md:text-start text-[26px] md:text-[40px]"
+            data-i18n="teacherDetail.title"></h1>
+        <div class="flex flex-row items-center justify-center md:justify-start gap-1">
+            <p class="text-white text-sm font-open" data-i18n="teacherDetail.subtitle1"></p>
+            <p class="text-white text-sm font-open px-1">/</p>
+            <p class="text-white text-sm font-open" data-i18n="teacherDetail.subtitle2"></p>
+        </div>
+    </section>
+    <section class="flex flex-col justify-center md:flex-row py-10 px-5 mb-16 lg:flex-row px-6 md:gap-6">
+        <div class="flex flex-col md:w-1/3 ">
             <div class="overflow-hidden w-full ">
-                <img class="object-cover w-full "
+                <img class="img-article object-cover w-full "
                     src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-3.jpg"
                     alt="article">
             </div>
             <div class="flex flex-col justify-center items-center gap-4">
-                <h3 class="mt-4">Damie glendell</h3>
-                <span>Co-Director</span>
+                <h3 class="mt-4 font-serif text-[#303030] text-2xl">Damie glendell</h3>
+                <span class="text-[#808080] font-serif text-base py-2">Co-Director</span>
             </div>
+            <div class="mt-2 flex justify-center items-center space-x-2 mb-5 md:mb-0">
+                <a href="#"
+                  class="flex h-10 w-10 items-center justify-center rounded-full transition-colors">
+                  <i class="fab fa-facebook-f text-xanhMain transition-colors hover:text-[#303030]"></i>
+                </a>
+                <a href="#"
+                  class="flex h-10 w-10 items-center justify-center rounded-full transition-colors">
+                  <i class="fab fa-twitter text-xanhMain transition-colors hover:text-[#303030]"></i>
+                </a>
+                <a href="#"
+                  class="flex h-10 w-10 items-center justify-center rounded-full transition-colors">
+                  <i class="fab fa-instagram text-xanhMain transition-colors hover:text-[#303030]"></i>
+                </a>
+              </div>
         </div>
         <div class="flex flex-col gap-6 md:w-2/3 lg:w-2/4">
             <ul class="lg:mx-6 lg:mx-0">
@@ -46,7 +497,7 @@
             <div class="mt-2">
                 <h2>Classes Handling</h2>
                 <table class="table-auto w-full">
-                    <thead >
+                    <thead>
                         <tr>
                             <th class="bg-[#838C48] text-white border border-white w-2/3">class name</th>
                             <th class="bg-[#838C48] text-white border border-white w-1/3">class Type</th>
@@ -95,9 +546,150 @@
         </div>
     </section>
 </body>
+<footer>
+    <!-- footer top -->
+    <section class="relative px-4 md:px-8 pb-1 pt-12 text-black bg-beLight">
+        <div
+            class="absolute left-1/2 top-0 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-beMain p-2">
+            <img src="./assests/images/lms-logo.png" alt="Logo">
+        </div>
+        <div class="mx-auto max-w-screen-xl py-11">
+            <div class="mx-6 flex flex-wrap justify-between">
+                <!-- Column 1 -->
+                <div
+                    class="order-first md:mb-10 lg:mb-16 w-full px-6 text-center md:w-full lg:mx-0 lg:w-1/4 lg:text-left">
+                    <h3 data-i18n="footer.col1-title"
+                        class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+                    <p data-i18n="footer.col1-param1" class="mb-3 text-[#808080] pt-2 text-sm font-open"></p>
+                    <p data-i18n="footer.col1-param2" class="mb-5 text-[#808080] text-sm font-open"></p>
+                    <button data-i18n="footer.col1-button"
+                        class="rounded border-2 border-xanhMain px-4 py-2 text-xanhMain hover:bg-xanhMain hover:text-white"><span
+                            class="text-sm font-open"></span></button>
+                </div>
+                <!-- Column 2 -->
+                <div class="mt-8 w-full px-6 text-center sm:text-left md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
+                    <h3 data-i18n="footer.col2-title"
+                        class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+                    <ul class="text-sm text-gray-400">
+                        <li class="mb-2 border-b border-gray-400 py-2">
+                            <a data-i18n="footer.col2-param1" href="#"
+                                class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
+                            <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+                        </li>
+                        <li class="mb-2 border-b border-gray-400 pb-2">
+                            <a data-i18n="footer.col2-param2" href="#"
+                                class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
+                            <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+                        </li>
+                        <li class="mb-2">
+                            <a data-i18n="footer.col2-param3" href="#"
+                                class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
+                            <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="mt-8 h-full w-full px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
+                    <h3 data-i18n="footer.col3-title"
+                        class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+                    <ul class="text-sm text-gray-400">
+                        <li data-i18n="footer.col3-param1" class="mb-2 border-b border-gray-400 py-2">
+                            <a href="#" class="text-[#808080] hover:text-xanhMain"></a>
+                        </li>
+                        <li data-i18n="footer.col3-param2" class="mb-2 border-b border-gray-400 py-2"><a href="#"
+                                class="text-[#808080] hover:text-xanhMain"></a></li>
+                        <li data-i18n="footer.col3-param3" class="mb-2 border-b border-gray-400 py-2"><a href="#"
+                                class="text-[#808080] hover:text-xanhMain"></a></li>
+                        <li data-i18n="footer.col3-param4" class="mb-2 border-b border-gray-400 py-2"><a href="#"
+                                class="text-[#808080] hover:text-xanhMain"></a></li>
+                        <li data-i18n="footer.col3-param5" class="mb-2 pt-2"><a href="#"
+                                class="text-[#808080] hover:text-xanhMain"></a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="mt-8 h-full w-[240px] px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
+                    <h3 data-i18n="footer.col4-title"
+                        class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+                    <ul class="text-sm text-gray-400 md:w-[90%] lg:w-[70%]">
+                        <li class="mb-2 border-b border-gray-400 py-2 flex">
+                            <span class="text-xanhMain text-sm font-open"><i
+                                    class="fa-solid fa-location-arrow"></i></span>
+                            <span data-i18n="footer.col4-param" class="text-[#808080] pl-2 text-sm font-open"></span>
+                        </li>
+                        <li class="mb-2 border-b border-gray-400 py-2">
+                            <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-phone"></i></span>
+                            <a href="tel:+11276542233"><span
+                                    class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">+11 (2)
+                                    7654
+                                    2233</span></a>
+                        </li>
+                        <li class="mb-2 border-b border-gray-400 py-2">
+                            <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-fax"></i></span><a
+                                href="tel:+11576542244"><span
+                                    class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">+11 (5)
+                                    7654 2244</span></a>
+                        </li>
+                        <li class="mb-2">
+                            <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-envelope"></i></span><a
+                                href="mailto:lms@gmail.com"><span
+                                    class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">lms@gmail.com</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer bottom -->
+    <section class="md:flex md:justify-between md:items-center bg-xanhMain py-7 px-8 text-white lg:px-28">
+        <div class="mb-4 flex justify-center md:block lg:flex items-center sm:mb-0">
+            <div class="flex">
+                <p class="text-sm font-open">Copyright © 2020 LMS Theme All Rights Reserved</p>
+                <span class="mx-4 h-4 border-r-2 text-sm font-open"></span>
+            </div>
+            <p>Design Themes</p>
+        </div>
+        <div class="flex justify-center space-x-4 mt-4 md:mt-0 sm:gap-5">
+            <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i
+                        class="fa-brands fa-twitter"></i></i></a></span>
+            <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i
+                        class="fa-brands fa-youtube"></i></a></span>
+            <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i
+                        class="fa-brands fa-facebook-f"></i></a></span>
+            <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i
+                        class="fa-brands fa-skype"></i></a></span>
+        </div>
+    </section>
+</footer>
 
 </html>
+<script>
+    AOS.init();
+</script>
+<script src="js/home.js"></script>
+<script defer>
+    window.onload = function () {
+        var translator = new Translator({
+            filesLocation: "../languages",
+        });
 
+        var savedLanguage = localStorage.getItem("selectedLanguage") || "vi";
+        var languageSelect = document.getElementById("languageSelect");
+        languageSelect.value = savedLanguage;
+
+        function updateLanguage(newLanguage) {
+            translator.translatePageTo(newLanguage);
+            localStorage.setItem("selectedLanguage", newLanguage);
+        }
+
+        translator.fetch(["vi", "en"]).then(() => {
+            translator.translatePageTo(savedLanguage);
+        });
+
+        languageSelect.addEventListener("change", function () {
+            updateLanguage(languageSelect.value);
+        });
+    };
+</script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
 
@@ -115,7 +707,7 @@
         var paramValue = urlParams.get('id');
         console.log(paramValue);
         const renderDetails = (data) => {
-            const imageElement = document.querySelector('img');
+            const imageElement = document.querySelector('.img-article');
             const nameElement = document.querySelector('h3');
             const jobElement = document.querySelector('span');
             const courseClass = document.querySelector('.collum-course')
@@ -126,7 +718,7 @@
             jobElement.textContent = data.jobs;
 
             let templateCollumClass = ''
-        
+
             data.classes.forEach((item) => {
                 templateCollumClass += `
                 <tr>
