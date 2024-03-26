@@ -770,7 +770,7 @@
 
 
         const renderPosts = async (page, perPage) => {
-            let uri = `http://localhost:3001/courses?_page=${page}&_per_page=${perPage}`;
+            let uri = `https://titans-project.onrender.com/courses?_page=${page}&_per_page=${perPage}`;
             const res = await fetch(uri);
             const data = await res.json();
             course = data.data;
@@ -837,7 +837,7 @@
         });
         async function filterByCheckBox() {
             try {
-                const response = await fetch(`http://localhost:3001/search/courses${window.location.search}`);
+                const response = await fetch(`https://titans-project.onrender.com/search/courses${window.location.search}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -881,7 +881,7 @@
 
 
         const searchData = async (type, name) => {
-            let uri = `http://localhost:3001/search/courses?${type}=${name}`;
+            let uri = `https://titans-project.onrender.com/search/courses?${type}=${name}`;
             const res = await fetch(uri);
             const data = await res.json();
 

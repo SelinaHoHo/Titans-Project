@@ -1298,7 +1298,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const container = document.querySelector('.grid-item-slide');
     const callAPI = async (page, perPage) => {
-            let uri = `http://localhost:3001/courses?_page=${page}&_per_page=${perPage}`;
+            let uri = `https://titans-project.onrender.com/courses?_page=${page}&_per_page=${perPage}`;
             const res = await fetch(uri);
             const data = await res.json();
             console.log(data)

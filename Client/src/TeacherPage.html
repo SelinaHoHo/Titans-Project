@@ -719,7 +719,7 @@
 
 
       const renderPosts = async () => {
-          let uri = `http://localhost:3001/teacher`;
+          let uri = `https://titans-project.onrender.com/teacher`;
           const res = await fetch(uri);
           const data = await res.json();
           renderGrid(data);

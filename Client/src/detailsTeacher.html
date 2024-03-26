@@ -698,7 +698,7 @@
         let teacherData
 
         const callAPI = async () => {
-            let uri = `http://localhost:3001/teacher?id=${paramValue}`;
+            let uri = `https://titans-project.onrender.com/teacher?id=${paramValue}`;
             const res = await fetch(uri);
             const data = await res.json();
             renderDetails(data);
