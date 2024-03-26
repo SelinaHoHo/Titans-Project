@@ -18,8 +18,8 @@
     <script src="js/tailwind.config.js"></script>
     <link rel="stylesheet" href="./assests/css/header.css" />
 </head>
-<header class="header-background py-4">
-    <div class="nav flex lg:justify-center items-center w-[100%] mx-auto ">
+<header>
+    <div class="bg-beMain py-5 flex justify-center items-center w-[100%] mx-auto">
       <div class="flex w-[15%]">
         <div>
           <a href="./index.html">
@@ -27,6 +27,7 @@
           </a>
         </div>
       </div>
+  
       <div class="flex flex-wrap justify-end items-center">
         <div
           class="nav-links duration-500 md:static absolute md:min-h-fit left-0 md:w-auto sm:w-auto  flex items-center pr-5">
@@ -35,10 +36,9 @@
             <!-- home -->
             <li class="nav-it relative h-[5rem] flex items-center">
               <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-                <p data-i18n="navBar.home" class="">home</p>
+                <p class="">home</p>
               </a>
-              <ul
-                class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+              <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
                 <li>
                   <a href="./index.html" class="block hover:bg-[#F5E9D4] p-2">Home</a>
                 </li>
@@ -65,12 +65,11 @@
             <!-- courses -->
             <li class="nav-it relative h-[5rem] flex items-center">
               <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-                <p data-i18n="navBar.courses" class="">courses</p>
+                <p class="">courses</p>
               </a>
-              <ul
-                class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+              <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
                 <li>
-                  <a href="#" class="block hover:bg-[#F5E9D4] p-2">Courses-template</a>
+                  <a href="./listCoure.html" class="block hover:bg-[#F5E9D4] p-2">Courses-template</a>
                 </li>
                 <li>
                   <a href="#" class="block hover:bg-[#F5E9D4] p-2">Lesson</a>
@@ -89,10 +88,9 @@
             <!-- pages -->
             <li class="nav-it relative h-[5rem] flex items-center">
               <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-                <p data-i18n="navBar.pages" class="">Pages</p>
+                <p class="">Pages</p>
               </a>
-              <ul
-                class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+              <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
                 <li>
                   <a href="#" class="block hover:bg-[#F5E9D4] p-2">BuddyPress</a>
                 </li>
@@ -119,7 +117,7 @@
             <!-- Blog -->
             <li class="nav-it relative h-[5rem] flex items-center">
               <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-                <p data-i18n="navBar.blog" class="">Blog</p>
+                <p class="">Blog</p>
               </a>
               <ul
                 class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-1/2 transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
@@ -192,7 +190,7 @@
             <!--Gallery  -->
             <li class="nav-it relative h-[5rem] flex items-center">
               <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-                <p data-i18n="navBar.gallery" class="">Gallery</p>
+                <p class="">Gallery</p>
               </a>
               <ul
                 class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-[-30%] transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
@@ -277,7 +275,7 @@
             <!--Shop  -->
             <li class="nav-it relative h-[5rem] flex items-center">
               <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-                <p data-i18n="navBar.shop" class="">Shop</p>
+                <p class="">Shop</p>
               </a>
               <ul
                 class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-[-184%] transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
@@ -370,10 +368,9 @@
             <!-- contact -->
             <li class="nav-it relative h-[5rem] flex items-center">
               <a href="./contactPage.html" class="hideOnMobile hover:text-gray-500 uppercase">
-                <p data-i18n="navBar.contact" class="">contact</p>
+                <p class="">contact</p>
               </a>
-              <ul
-                class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+              <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
                 <li>
                   <a href="#" class="block hover:bg-[#F5E9D4] p-2">Contact-Layout-1</a>
                 </li>
@@ -401,13 +398,13 @@
                 <i class="fa-solid fa-user {{ sm:p-2 }} inline-block rounded border-2 border-black"></i>
             </li>
             <li>
-              <a href="#" title="login" data-i18n="navBar.login"> Login </a>
+              <a href="#" title="login" class=""> Login </a>
             </li>
             <li>
               <a href="#" title="login" class=""> <span>|</span> </a>
             </li>
             <li>
-              <a href="#" title="register" data-i18n="navBar.register">Register</a>
+              <a href="#" title="register">Register</a>
             </li>
             <li>
               <div class="relative flex">
@@ -423,131 +420,8 @@
         </div>
       </div>
     </div>
-    <!--  -->
-    <div class="sidebar-links">
-      <ul class="sidebar">
-        <li class="close-sidebar flex items-end justify-end" onclick="hideSidebar()">
-          <span>
-            <i class="fa-solid fa-xmark fa-xl"></i>
-          </span>
-        </li>
-  
-        <li>
-          <a href="#" class="menu-link flex justify-between items-center" onclick="showNewSidebar()">
-            <span>Home</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="menu-link flex justify-between items-center">
-            <span>Courses</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="menu-link flex justify-between items-center">
-            <span>Pages</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="menu-link flex justify-between items-center">
-            <span>Blog</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="menu-link flex justify-between items-center">
-            <span>Gallery</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="menu-link flex justify-between items-center">
-            <span>Shop</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="menu-link flex justify-between items-center">
-            <span>Contact</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </li>
-      </ul>
-  
-      <div class="overlay" onclick="hideSidebar()"></div>
-    </div>
-  
-    <!--  -->
-    <div class="elementor mx-auto">
-      <div data-aos="fade-up" data-aos-duration="1500"  class="flex justify-center items-center mt-10 overflow-hidden">
-        <form class="max-w-lg lg:w-[30%] lg:max-w-none md:w-[40%] md:max-w-none sm:w-[40%] sm:max-w-none">
-          <div class="nav-fKeywords flex items-center py-3">
-            <input
-              class="appearance-none bg-white border-none w-full text-gray-700 py-3 px-2 leading-tight focus:outline-none"
-              type="text" placeholder="keywords" aria-label="keywords" />
-            <button title="Search"
-              class="flex-shrink-0 hover:bg-black hover:border-gray-700 text-sm border-4 text-white py-3 px-4 rounded-r-sm"
-              type="submit">
-              <i class="fa-solid fa-magnifying-glass "></i>
-            </button>
-          </div>
-        </form>
-      </div>
-  
-      <!--  -->
-      <div data-aos="fade-up" data-aos-duration="1500" class="container-key overflow-hidden">
-        <div class="flex justify-center items-center mt-5 ">
-          <h3 class="italic-open-sans">
-            We have the largest collection of courses
-          </h3>
-        </div>
-        <h3 class="flex italic-open-sans justify-center items-center m-5" style="color: #838c48">
-          View All Courses <i class="fa-solid fa-angles-right ml-3"></i>
-        </h3>
-      </div>
-      <!--  -->
-      <div data-aos="fade-down" data-aos-duration="1500" class="header-count overflow-hidden">
-        <div class="grid-container mt-10">
-          <div class="grid-item">
-            <h1 id="courses-count" class="number mb-3">123</h1>
-            <div class="divider">
-              <span></span>
-            </div>
-            <p class="text">Courses</p>
-          </div>
-  
-          <div class="grid-item">
-            <h1 id="members-count" class="number mb-3">123</h1>
-            <div class="divider">
-              <span></span>
-            </div>
-            <p class="text">Members</p>
-          </div>
-  
-          <div class="grid-item">
-            <h1 id="authors-count" class="number mb-3">123</h1>
-            <div class="divider">
-              <span></span>
-            </div>
-            <p class="text">Authors</p>
-          </div>
-  
-          <div class="grid-item">
-            <h1 id="subjects-count" class="number mb-3">123</h1>
-            <div class="divider">
-              <span></span>
-            </div>
-            <p class="text">Subjects</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--  -->
   </header>
-
-<body id="languageSelect" class="bg-[#FDF6EA]">
+<body class="relative bg-beMain">
     <button type="button" onclick="scrollToTop()"
         class="bg-xanhMain w-[40px] h-[40px] text-white shadow-md rounded-sm fixed bottom-4 right-4 z-50 hover:bg-[#2B2F10] transition duration-700 ease-in-out">
         <i class="fa-solid fa-chevron-up"> </i>
