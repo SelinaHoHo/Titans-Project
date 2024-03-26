@@ -76,25 +76,119 @@
       "id": 1,
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-3.jpg",
       "name": "damie glendell",
-      "jobs": "co-director"
+      "jobs": "co-director",
+      "classes":[
+        {
+          "id":1,
+          "name": "summer class",
+          "type": "online"
+        },
+        {
+          "id":2,
+          "name": "summer class 2",
+          "type": "onsite"
+        }
+      ],
+      "course":[
+        {
+          "id":1,
+          "name": "Introduction to Calculus",
+          "curriculum": 5
+        },
+        {
+          "id":2,
+          "name": "Emerging Trends and Technologies",
+          "curriculum": 5
+        }
+      ]
     },
     {
       "id": 2,
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-2.jpg",
       "name": "james catwin",
-      "jobs": "art director"
+      "jobs": "art director",
+      "classes":[
+        {
+          "id":1,
+          "name": "summer class",
+          "type": "online"
+        },
+        {
+          "id":2,
+          "name": "summer class",
+          "type": "online"
+        }
+      ],
+      "course":[
+        {
+          "id":1,
+          "name": "Introduction to Calculus",
+          "curriculum": 5
+        },
+        {
+          "id":2,
+          "name": "Emerging Trends and Technologies",
+          "curriculum": 5
+        }
+      ]
     },
     {
       "id": 3,
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-1.jpg",
       "name": "jenny sheen",
-      "jobs": "digital media programming"
+      "jobs": "digital media programming",
+      "classes":[
+        {
+          "id":3,
+          "name": "kid swimming class",
+          "type": "onsite"
+        }
+      ],
+      "course":[
+        {
+          "id":4,
+          "name": "Basic Laws and Poilices",
+          "curriculum": 5
+        },
+        {
+          "id":5,
+          "name": "Fitness Training Program",
+          "curriculum": 6
+        },
+        {
+          "id":6,
+          "name": "Maintenance Training",
+          "curriculum": 7
+        }
+      ]
     },
     {
       "id": 4,
       "image": "https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-4.jpg",
       "name": "jim morrison",
-      "jobs": "chief programmer"
+      "jobs": "chief programmer",
+      "classes":[
+        {
+          "id":1,
+          "name": "summer class",
+          "Type": "online"
+        },
+        {
+
+        }
+      ],
+      "course":[
+        {
+          "id":1,
+          "name": "Introduction to Calculus",
+          "Curriculum": 5
+        },
+        {
+          "id":2,
+          "name": "Emerging Trends and Technologies",
+          "Curriculum": 5
+        }
+      ]
     }
   ]
 }

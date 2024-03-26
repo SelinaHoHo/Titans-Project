@@ -24,7 +24,15 @@ server.use((req, res, next) => {
   next();
 });
 
-
+server.get("/teacher", (req, res, next) =>{
+  const id = req.query.id;
+  if(id){
+    let teacherData = router.db.get("teacher").find({ id: parseInt(id) }).value()
+    return res.json(teacherData);
+  }
+  let data = router.db.get("teacher").value();
+  return res.json(data);
+})
 
 server.get("/courses", (req, res, next) => {
   const page = parseInt(req.query._page) || 1;
