@@ -21,8 +21,8 @@
 </head>
 
 
-<header>
-  <div class="flex justify-center items-center w-[100%] mx-auto">
+<header class="py-4">
+  <div class="md:justify-around flex lg:justify-center items-center w-[100%] mx-auto">
     <div class="flex w-[15%]">
       <div>
         <a href="./index.html">
@@ -39,9 +39,10 @@
           <!-- home -->
           <li class="nav-it relative h-[5rem] flex items-center">
             <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-              <p class="">home</p>
+              <p data-i18n="navBar.home" class="">home</p>
             </a>
-            <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+            <ul
+              class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
               <li>
                 <a href="./index.html" class="block hover:bg-[#F5E9D4] p-2">Home</a>
               </li>
@@ -68,9 +69,10 @@
           <!-- courses -->
           <li class="nav-it relative h-[5rem] flex items-center">
             <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-              <p class="">courses</p>
+              <p data-i18n="navBar.courses" class="">courses</p>
             </a>
-            <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+            <ul
+              class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
               <li>
                 <a href="#" class="block hover:bg-[#F5E9D4] p-2">Courses-template</a>
               </li>
@@ -91,9 +93,10 @@
           <!-- pages -->
           <li class="nav-it relative h-[5rem] flex items-center">
             <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-              <p class="">Pages</p>
+              <p data-i18n="navBar.pages" class="">Pages</p>
             </a>
-            <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+            <ul
+              class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
               <li>
                 <a href="#" class="block hover:bg-[#F5E9D4] p-2">BuddyPress</a>
               </li>
@@ -120,7 +123,7 @@
           <!-- Blog -->
           <li class="nav-it relative h-[5rem] flex items-center">
             <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-              <p class="">Blog</p>
+              <p data-i18n="navBar.blog" class="">Blog</p>
             </a>
             <ul
               class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-1/2 transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
@@ -193,7 +196,7 @@
           <!--Gallery  -->
           <li class="nav-it relative h-[5rem] flex items-center">
             <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-              <p class="">Gallery</p>
+              <p data-i18n="navBar.gallery" class="">Gallery</p>
             </a>
             <ul
               class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-[-30%] transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
@@ -278,7 +281,7 @@
           <!--Shop  -->
           <li class="nav-it relative h-[5rem] flex items-center">
             <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-              <p class="">Shop</p>
+              <p data-i18n="navBar.shop" class="">Shop</p>
             </a>
             <ul
               class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[970px] left-[-184%] transform -translate-x-1/2 shadow-lg border-t-4 border-[#d3daa6]">
@@ -371,9 +374,10 @@
           <!-- contact -->
           <li class="nav-it relative h-[5rem] flex items-center">
             <a href="#" class="hideOnMobile hover:text-gray-500 uppercase">
-              <p class="">contact</p>
+              <p data-i18n="navBar.contact" class="">contact</p>
             </a>
-            <ul class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
+            <ul
+              class="sub-menu hidden absolute bg-[#fdf6ea] py-3 px-4 w-[180px] shadow-lg border-t-4 border-[#d3daa6]">
               <li>
                 <a href="#" class="block hover:bg-[#F5E9D4] p-2">Contact-Layout-1</a>
               </li>
@@ -401,19 +405,19 @@
               <i class="fa-solid fa-user {{ sm:p-2 }} inline-block rounded border-2 border-black"></i>
           </li>
           <li>
-            <a href="#" title="login" class=""> Login </a>
+            <a href="#" title="login" data-i18n="navBar.login"> Login </a>
           </li>
           <li>
             <a href="#" title="login" class=""> <span>|</span> </a>
           </li>
           <li>
-            <a href="#" title="register">Register</a>
+            <a href="#" title="register" data-i18n="navBar.register">Register</a>
           </li>
           <li>
             <div class="relative flex">
               <i class="fas fa-globe absolute top-1/2 transform -translate-y-1/2 left-3 text-xanhMain"></i>
               <select id="languageSelect"
-                class="pl-10 pr-4 py-2 rounded-lg border border-xanhMain  bg-white text-gray-900 appearance-none ">
+                class="pl-10 pr-2 py-2 rounded-lg border border-xanhMain  bg-white text-gray-900 appearance-none ">
                 <option value="vi">VN</option>
                 <option value="en">ENG</option>
               </select>
@@ -480,7 +484,6 @@
   </div>
 
 </header>
-
 <body class="relative">
   <button type="button" onclick="scrollToTop()"
     class="bg-xanhMain w-[40px] h-[40px] text-white shadow-md rounded-sm fixed bottom-4 right-4 z-50 hover:bg-[#2B2F10] transition duration-700 ease-in-out">

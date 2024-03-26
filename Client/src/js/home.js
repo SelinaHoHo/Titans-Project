@@ -19,21 +19,21 @@ function animateNumber(
     requestAnimationFrame(updateNumber);
   }
   document.addEventListener("DOMContentLoaded", function () {
-    animateNumber(332, 300, 0, function (number) {
+    animateNumber(332, 1500, 0, function (number) {
       const formattedNumber = number.toLocaleString();
       document.getElementById("courses-count").innerText = formattedNumber;
     });
 
-    animateNumber(1403, 300, 0, function (number) {
+    animateNumber(1403, 1500, 0, function (number) {
       const formattedNumber = number.toLocaleString();
       document.getElementById("members-count").innerText = formattedNumber;
     });
 
-    animateNumber(60, 300, 0, function (number) {
+    animateNumber(60, 1500, 0, function (number) {
       const formattedNumber = number.toLocaleString();
       document.getElementById("authors-count").innerText = formattedNumber;
     });
-    animateNumber(120, 300, 0, function (number) {
+    animateNumber(120, 1500, 0, function (number) {
       const formattedNumber = number.toLocaleString();
       document.getElementById("subjects-count").innerText = formattedNumber;
     });

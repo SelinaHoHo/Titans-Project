@@ -52,5 +52,16 @@
     "syllabus": "Xem trước giáo trình",
     "step04": "Bước 04",
     "purchase ": "Mua khóa học"
+  },   
+  "navBar": {
+    "home": "trang chủ ",
+    "courses": "môn học",
+    "pages": "trang",
+    "blog" : "Blog",
+    "gallery" : "Phòng trưng bày",
+    "shop": "Cửa hàng",
+    "contact": "Liên hệ",
+    "login": "Đăng Nhập",
+    "register": "Tạo tài khoản"
   }
 }

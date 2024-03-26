@@ -52,5 +52,16 @@
     "syllabus": "Preview the Syllabus",
     "step04": "Step 04",
     "purchase ": "Purchase the Course"
+  },
+  "navBar": {
+    "home": "Home",
+    "courses": "Courses",
+    "pages": "Pages",
+    "blog" : "Blog",
+    "gallery" : "Gallery",
+    "shop": "Shop",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register"
   }
 }
