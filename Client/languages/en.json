@@ -98,5 +98,16 @@
     "title": "Author: dtlmsele",
     "subtitle1": "Home",
     "subtitle2": "dtlmsele"
+  },
+  "navBar": {
+    "home": "Home",
+    "courses": "Courses",
+    "pages": "Pages",
+    "blog" : "Blog",
+    "gallery" : "Gallery",
+    "shop": "Shop",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register"
   }
 }

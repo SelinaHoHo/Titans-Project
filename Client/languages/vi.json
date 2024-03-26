@@ -98,5 +98,16 @@
     "title": "Tác giả: dtlmsele",
     "subtitle1": "Trang chủ",
     "subtitle2": "dtlmsele"
+  },   
+  "navBar": {
+    "home": "trang chủ ",
+    "courses": "môn học",
+    "pages": "trang",
+    "blog" : "Blog",
+    "gallery" : "Phòng trưng bày",
+    "shop": "Cửa hàng",
+    "contact": "Liên hệ",
+    "login": "Đăng Nhập",
+    "register": "Tạo tài khoản"
   }
 }
