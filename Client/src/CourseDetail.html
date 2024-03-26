@@ -1,114 +1,912 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assests/css/output.css" />
-  <link rel="stylesheet" href="./assests/css/styles.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assests/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Courses Detail</title>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js" defer></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="js/tailwind.config.js"></script>
-  <link rel="stylesheet" href="assests/css/header.css">
-</head>
-<body class="relative">
-    <button type="button" onclick="scrollToTop()"
-    class="bg-xanhMain w-[40px] h-[40px] text-white shadow-md rounded-sm fixed bottom-4 right-4 z-50 hover:bg-[#2B2F10] transition duration-700 ease-in-out">
-    <i class="fa-solid fa-chevron-up"> </i>
-  </button>
-  <script>
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-   <div class="container mx-auto bg-re">
-    <select id="languageSelect">
-      <option value="vi">Vietnamese</option>
-      <option value="en">English</option>
-    </select>
-    <h1 data-i18n="header.title"></h1>
-    <h2 data-i18n="header.title"></h2>
-    <h3 data-i18n="header.title"></h3>
-    <p data-i18n="header.subtitle"></p>
-  </div>
-</body>
-<footer>
+    <script
+      src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js"
+      defer
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assests/css/header.css" />
+  </head>
+  <body class="relative bg-[#fdf6ea]">
+    <div class="flex flex-col lg:mx-28 md:flex-row sm:mx-8 mb-20">
+      <div class="lg:w-[70%] md:w-[70%] sm:w-[100%]">
+        <div class="h-[70px] flex">
+          <button id="prevBtn" class="px-4 py-2 bg-[#f5e9d4] text-gray-700">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div
+            class="flex overflow-hidden w-auto bg-[#f5e9d4]"
+            id="tabContainer"
+          >
+            <!-- Tab buttons -->
+            <div
+              id="Curriculum"
+              class="flex items-center justify-center px-4 py-2 text-gray-700 cursor-pointer bg-[#838c48] text-white transition duration-500"
+            >
+              <i class="fa-solid fa-book"></i>
+              <div class="pl-2">Curriculum</div>
+            </div>
+
+            <div
+              id="About"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-brands fa-docker"></i>
+              <div class="pl-2">About</div>
+            </div>
+            <div
+              id="Members"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-solid fa-user"></i>
+              <div class="pl-2">Members</div>
+            </div>
+            <div
+              id="Instructors"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <div class="pl-2">Instructors</div>
+            </div>
+            <div
+              id="Group"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-solid fa-user-group"></i>
+              <div class="pl-2">Group</div>
+            </div>
+
+            <div
+              id="News"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-solid fa-newspaper"></i>
+              <div class="pl-2">News</div>
+            </div>
+
+            <div
+              id="Reviews"
+              class="flex items-center justify-center px-4 py-2 cursor-pointer transition duration-500"
+            >
+              <i class="fa-solid fa-star"></i>
+              <div class="pl-2">Reviews</div>
+            </div>
+          </div>
+
+          <button id="nextBtn" class="px-4 py-2 text-gray-700 bg-[#f5e9d4]">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div id="curriculumContent" style="display: block">
+          <h1 class="font-open text-xl font-semibold py-[20px]">CURRICULUM</h1>
+
+          <div class="border-4 border-[#f5e9d4] w-[100%] md:w-[99%] p-4">
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Aliquam Massa Turpis
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 2 hrs</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Cras Pharetra Nisl Et Magna
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 30 mins</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Nullam Vestibulum Eros
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 20 mins</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Placerat Odio Eu
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 2 hrs</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Aliquam Dolor Non
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 30 mins</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Fill In The Blank Questions
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 30 mins</div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-start md:justify-between border-b py-4"
+            >
+              <div class="flex items-center py-2">
+                <i class="fa-solid fa-book"></i>
+                <div
+                  class="pl-2 hover:text-[#DA853D] transition duration-500 cursor-pointer"
+                >
+                  Questions With Images
+                </div>
+              </div>
+              <div class="flex items-center py-2">
+                <div class="px-2 py-1 text-white text-xs bg-[#838c48]">
+                  Preview
+                </div>
+                <i class="fa-regular fa-clock px-2"></i>
+                <div>Duration: 20 hrs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="aboutContent" style="display: none">
+          <p class="font-open text-base my-8 text-[#808080] pr-2">
+            Ut ac euismod velit. Aliquam condimentum dolor accumsan, venenatis
+            sapien eu, egestas nunc. Suspendisse euismod semper fermentum. Nulla
+            eleifend nibh pretium mattis dapibus. Morbi blandit enim turpis, et
+            vestibulum orci fermentum in. Vestibulum sodales lectus dolor, vitae
+            suscipit ante volutpat dignissim. Nulla metus lectus, vestibulum in
+            fermentum id, lobortis vitae eros. Vivamus sed accumsan metus.
+            Pellentesque pretium leo sapien, vel commodo est feugiat non.
+            Aliquam id nulla feugiat, auctor lacus ut, tristique lectus.
+            Praesent ac fringilla mi. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Etiam sed dui ultrices,
+            iaculis tellus non, bibendum nisl. Cras id sollicitudin neque. Duis
+            sed ipsum nunc. Vivamus nec neque ac nulla malesuada semper a id
+            leo. Donec condimentum auctor malesuada. Nullam dapibus in tellus
+            nec aliquam. Aliquam nibh tortor, volutpat sit amet dapibus viverra,
+            convallis sit amet turpis. Phasellus ac enim et odio auctor posuere.
+            Donec pulvinar, urna ut molestie suscipit, magna mauris posuere
+            tortor, nec feugiat lacus nulla eu odio. Suspendisse potenti. Nunc
+            at sem vitae mi bibendum consectetur. Cras eget feugiat enim. Nunc
+            consequat nibh sit amet ipsum ornare, vitae suscipit ipsum blandit.
+            Nulla rhoncus est id sem fringilla iaculis. Proin dapibus sed elit
+            id scelerisque. Etiam sed tempor sem, sed auctor felis. Fusce in
+            metus lacus. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Donec suscipit porta lacus, sed commodo ante luctus
+            ullamcorper. Aliquam ornare tincidunt nulla sit amet vestibulum.
+            Fusce venenatis odio ac quam aliquam lobortis. Nulla porttitor,
+            lacus vel dapibus adipiscing, augue odio tristique ligula, quis
+            porta velit lectus ac est. Proin sit amet leo at lorem iaculis
+            interdum. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Nullam sed odio tortor.
+          </p>
+        </div>
+
+        <div id="membersContent" style="display: none">
+          <h1 class="font-open text-xl font-semibold py-[20px]">MEMBERS</h1>
+
+          <div class="flex font-serif">
+            <h2 class="text-base">Total number of Students in this course :</h2>
+            <p class="text-base font-bold pl-4">13</p>
+          </div>
+
+          <div class="flex flex-wrap gap-5">
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+
+            <div class="sm:w-[45%] w-[100%]">
+              <div>
+                <div class="flex items-center mt-2">
+                  <img
+                    src="https://www.gravatar.com/avatar/453a59a0552b87df037b3c87a0b2c562?s=96&r=g&d=mm"
+                    alt="avatar"
+                    class="rounded-full w-[60px] h-[60px]"
+                  />
+                  <p class="pl-4">Dtlmsele</p>
+                </div>
+                <div class="border-b-2 border-[##e2d6c1] my-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="instructorsContent" style="display: none">
+          <h1 class="font-open text-xl font-semibold py-[20px]">INSTRUCTORS</h1>
+
+          <div class="flex sm:flex-row flex-col gap-5">
+            <div
+              class="w-[100%] md:w[40%] p-2 bg-[#f5e9d4] flex flex-col items-center justify-center hover:text-white hover:bg-[#838c48] transition duration-500"
+            >
+              <img
+                src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-2.jpg"
+                alt="avatar"
+              />
+              <div class="pt-8 text-[#da543d] text-base font-semibold">
+                JAMES CATWIN
+              </div>
+              <div class="text-sm pt-2">Art Director</div>
+              <div class="border-b-10 border-[#838c48] py-4"></div>
+              <div class="flex gap-5 mb-2">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+
+            <div
+              class="w-[100%] md:w[40%] p-2 bg-[#f5e9d4] flex flex-col items-center justify-center hover:text-white hover:bg-[#838c48] transition duration-500"
+            >
+              <img
+                src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/Teacher-image-2.jpg"
+                alt="avatar"
+              />
+              <div class="pt-8 text-[#da543d] text-base font-semibold">
+                JAMES CATWIN
+              </div>
+              <div class="text-sm pt-2">Art Director</div>
+              <div class="border-b-10 border-[#838c48] py-4"></div>
+              <div class="flex gap-5 mb-2">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="groupContent" style="display: none">
+          <h1 class="font-serif font-bold mt-8 text-xl">GROUP</h1>
+          <h2 class="font-serif text-base text-[#808080] mt-2">
+            No group assigned for this course!
+          </h2>
+        </div>
+
+        <div id="newsContent" style="display: none">
+          <h1 class="font-open text-xl font-semibold py-[20px]">NEWS</h1>
+
+          <div class="flex flex-col md:flex-row">
+            <figure class="w-[100%] md:w-[50%]">
+              <img
+                src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/blog15.jpg"
+                alt="News image"
+              />
+            </figure>
+
+            <div class="p-4 w-[100%] md:w-[50%]">
+              <div
+                class="text-xl font-semibold font-serif text-[#000000] hover:text-[#DA853D] transition duration-500"
+              >
+                Image – Minus id quod
+              </div>
+              <div class="flex items-center text-[#DA853D]">
+                <i class="fa-solid fa-calendar"></i>
+                <div class="pl-2">24 Fri</div>
+              </div>
+
+              <p class="pt-2 text-lg text-gray-500">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. Nam libero tempore, cum soluta nobis est
+                eligendi optio cumque nihil impedit quo
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="reviewsContent" style="display: none">
+          <h1 class="font-open text-xl font-semibold py-[20px]">REVIEWS</h1>
+
+          <div class="flex flex-col">
+            <div class="flex flex-col md:flex-row py-4">
+              <div class="flex flex-col items-center justify-center mx-16">
+                <div class="text-[#000000] text-9xl font-semibold mb-2.5">
+                  0
+                </div>
+                <div class="text-yellow-500 flex gap-1">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="text-lg text-[#808080] py-2">1 Review</div>
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row items-center mt-2">
+                  <div class="mr-4 text-[#888987]">1 Stars</div>
+                  <div class="border-4 border-[#f5e9d4] w-[80%]"></div>
+
+                  <div class="ml-2 text-[#888987] text-lg">0</div>
+                </div>
+
+                <div class="flex flex-row items-center mt-2">
+                  <div class="mr-4 text-[#888987] text-base">2 Stars</div>
+                  <div class="border-4 border-[#f5e9d4] w-[80%]"></div>
+
+                  <div class="ml-2 text-[#888987] text-base">0</div>
+                </div>
+
+                <div class="flex flex-row items-center mt-2">
+                  <div class="mr-4 text-[#888987] text-base">3 Stars</div>
+                  <div class="border-4 border-[#f5e9d4] w-[80%]"></div>
+
+                  <div class="ml-2 text-[#888987] text-base">0</div>
+                </div>
+
+                <div class="flex flex-row items-center mt-2">
+                  <div class="mr-4 text-[#888987] text-base">4 Stars</div>
+                  <div class="border-4 border-[#f5e9d4] w-[80%]"></div>
+
+                  <div class="ml-2 text-[#888987] text-base">0</div>
+                </div>
+
+                <div class="flex flex-row items-center mt-2">
+                  <div class="mr-4 text-[#888987] text-base">5 Stars</div>
+                  <div class="border-4 border-[#f5e9d4] w-[80%]"></div>
+
+                  <div class="ml-2 text-[#888987] text-base">0</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-4 text-xl font-open font-semibold">COMMENTS (1)</div>
+
+            <div class="py-2 flex font-open">
+              <figure class="w-[5%]">
+                <img
+                  src="https://secure.gravatar.com/avatar/7fc6ccfdd919319ec9dc75839c627608?s=50&d=mm&r=g"
+                  alt="avt"
+                  class="w-10 h-10 rounded-full"
+                />
+              </figure>
+              <div class="p-2 w-[95%]">
+                <div><strong class="text-[#808080]">dummy</strong> says</div>
+                <div class="text-[#303030]">30 Thu at 8:49 am</div>
+                <div class="text-[#808080] py-2 font-bold">Test</div>
+                <div class="text-[#808080]">
+                  Ut ac euismod velit. Aliquam condimentum dolor accumsan,
+                  venenatis sapien eu, egestas nunc. Suspendisse euismod semper
+                  fermentum. Nulla eleifend nibh pretium mattis dapibus. Morbi
+                  blandit enim turpis, et vestibulum orci fermentum in.
+                  Vestibulum sodales lectus dolor
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center">
+              <div class="border-b-2 border-[#f5e9d4] w-[85%]"></div>
+              <div
+                class="px-4 py-2 bg-[#838c48] hover:bg-[#da853d] transition duration-500 text-white"
+              >
+                Reply
+              </div>
+            </div>
+
+            <div class="py-4 text-xl font-open font-semibold">
+              LEAVE A REPLY
+            </div>
+            <div class="text-[#808080]">
+              Your email address will not be published. Required fields are
+              marked *
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-5 mt-4">
+              <span class="w-[100%] md:w-[30%]">
+                <div class="mb-2 text-[#808080]">Your Name</div>
+                <input class="w-full h-14 border p-2" />
+              </span>
+
+              <span class="w-[100%] md:w-[30%]">
+                <div class="mb-2 text-[#808080]">Your Email</div>
+                <input class="w-full h-14 border p-2" />
+              </span>
+
+              <span class="w-[100%] md:w-[30%]">
+                <div class="mb-2 text-[#808080]">Your Phone</div>
+                <input class="w-full h-14 border p-2" />
+              </span>
+            </div>
+
+            <span class="w-[100%] md:w-[95%] py-8">
+              <div class="mb-2 text-[#808080]">Title</div>
+              <input class="h-14 border p-2 w-full" />
+            </span>
+
+            <div>
+              <div class="mb-2 text-[#808080]">Ratings</div>
+              <div class="text-yellow-500">
+                <i class="fa-regular fa-star fa-xs"></i>
+                <i class="fa-regular fa-star fa-xs"></i>
+                <i class="fa-regular fa-star fa-xs"></i>
+                <i class="fa-regular fa-star fa-xs"></i>
+                <i class="fa-regular fa-star fa-xs"></i>
+              </div>
+            </div>
+
+            <div class="py-8 w-[100%] md:w-[95%]">
+              <div class="mb-2 text-[#808080]">Comment *</div>
+              <textarea class="p-2 border w-full"></textarea>
+            </div>
+
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                class="form-checkbox h-3 w-3 text-blue-600"
+              />
+              <div class="pl-2">
+                Save my name, email, and website in this browser for the next
+                time I comment.
+              </div>
+            </div>
+
+            <button
+              class="py-4 px-4 text-white bg-[#838c48] w-[20%] my-2 hover:bg-[#da853d] transition duration-500"
+            >
+              Post Comment
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------- -->
+      <div
+        class="lg:w-[30%] md:w-[30%] sm:w-[100%] border-4 border-[#F5E9D4] px-5 py-6"
+      >
+        <p>Class</p>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      onclick="scrollToTop()"
+      class="bg-xanhMain w-[40px] h-[40px] text-white shadow-md rounded-sm fixed bottom-4 right-4 z-50 hover:bg-[#2B2F10] transition duration-700 ease-in-out"
+    >
+      <i class="fa-solid fa-chevron-up"> </i>
+    </button>
+
+    <script src="./js/courseDetails.js"></script>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+    <div class="container mx-auto bg-re">
+      <select id="languageSelect">
+        <option value="vi">Vietnamese</option>
+        <option value="en">English</option>
+      </select>
+      <h1 data-i18n="header.title"></h1>
+      <h2 data-i18n="header.title"></h2>
+      <h3 data-i18n="header.title"></h3>
+      <p data-i18n="header.subtitle"></p>
+    </div>
+  </body>
+  <footer>
     <!-- footer top -->
     <section class="relative px-4 md:px-8 pb-1 pt-12 text-black bg-beLight">
       <div
-        class="absolute left-1/2 top-0 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-beMain p-2">
-        <img src="./assests/images/lms-logo.png" alt="Logo">
+        class="absolute left-1/2 top-0 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-beMain p-2"
+      >
+        <img src="./assests/images/lms-logo.png" alt="Logo" />
       </div>
       <div class="mx-auto max-w-screen-xl py-11">
         <div class="mx-6 flex flex-wrap justify-between">
           <!-- Column 1 -->
-          <div class="order-first md:mb-10 lg:mb-16 w-full px-6 text-center md:w-full lg:mx-0 lg:w-1/4 lg:text-left">
-            <h3 data-i18n="footer.col1-title" class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
-            <p data-i18n="footer.col1-param1" class="mb-3 text-[#808080] pt-2 text-sm font-open"></p>
-            <p data-i18n="footer.col1-param2" class="mb-5 text-[#808080] text-sm font-open"></p>
-            <button data-i18n="footer.col1-button"
-              class="rounded border-2 border-xanhMain px-4 py-2 text-xanhMain hover:bg-xanhMain hover:text-white"><span class="text-sm font-open"></span></button>
+          <div
+            class="order-first md:mb-10 lg:mb-16 w-full px-6 text-center md:w-full lg:mx-0 lg:w-1/4 lg:text-left"
+          >
+            <h3
+              data-i18n="footer.col1-title"
+              class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"
+            ></h3>
+            <p
+              data-i18n="footer.col1-param1"
+              class="mb-3 text-[#808080] pt-2 text-sm font-open"
+            ></p>
+            <p
+              data-i18n="footer.col1-param2"
+              class="mb-5 text-[#808080] text-sm font-open"
+            ></p>
+            <button
+              data-i18n="footer.col1-button"
+              class="rounded border-2 border-xanhMain px-4 py-2 text-xanhMain hover:bg-xanhMain hover:text-white"
+            >
+              <span class="text-sm font-open"></span>
+            </button>
           </div>
           <!-- Column 2 -->
-          <div class="mt-8 w-full px-6 text-center sm:text-left md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
-            <h3 data-i18n="footer.col2-title" class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+          <div
+            class="mt-8 w-full px-6 text-center sm:text-left md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4"
+          >
+            <h3
+              data-i18n="footer.col2-title"
+              class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"
+            ></h3>
             <ul class="text-sm text-gray-400">
               <li class="mb-2 border-b border-gray-400 py-2">
-                <a data-i18n="footer.col2-param1" href="#" class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
-                <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+                <a
+                  data-i18n="footer.col2-param1"
+                  href="#"
+                  class="text-black text-base font-serif hover:text-[#DA853D] duration-700"
+                ></a>
+                <p
+                  data-i18n="footer.col2-free"
+                  class="text-xanhMain text-base"
+                ></p>
               </li>
               <li class="mb-2 border-b border-gray-400 pb-2">
-                <a data-i18n="footer.col2-param2" href="#" class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
-                <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+                <a
+                  data-i18n="footer.col2-param2"
+                  href="#"
+                  class="text-black text-base font-serif hover:text-[#DA853D] duration-700"
+                ></a>
+                <p
+                  data-i18n="footer.col2-free"
+                  class="text-xanhMain text-base"
+                ></p>
               </li>
               <li class="mb-2">
-                <a data-i18n="footer.col2-param3" href="#" class="text-black text-base font-serif hover:text-[#DA853D] duration-700"></a>
-                <p data-i18n="footer.col2-free" class="text-xanhMain text-base"></p>
+                <a
+                  data-i18n="footer.col2-param3"
+                  href="#"
+                  class="text-black text-base font-serif hover:text-[#DA853D] duration-700"
+                ></a>
+                <p
+                  data-i18n="footer.col2-free"
+                  class="text-xanhMain text-base"
+                ></p>
               </li>
             </ul>
           </div>
           <!-- Column 3 -->
-          <div class="mt-8 h-full w-full px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
-            <h3 data-i18n="footer.col3-title" class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+          <div
+            class="mt-8 h-full w-full px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4"
+          >
+            <h3
+              data-i18n="footer.col3-title"
+              class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"
+            ></h3>
             <ul class="text-sm text-gray-400">
-              <li data-i18n="footer.col3-param1" class="mb-2 border-b border-gray-400 py-2">
+              <li
+                data-i18n="footer.col3-param1"
+                class="mb-2 border-b border-gray-400 py-2"
+              >
                 <a href="#" class="text-[#808080] hover:text-xanhMain"></a>
               </li>
-              <li data-i18n="footer.col3-param2" class="mb-2 border-b border-gray-400 py-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
-              <li data-i18n="footer.col3-param3" class="mb-2 border-b border-gray-400 py-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
-              <li data-i18n="footer.col3-param4" class="mb-2 border-b border-gray-400 py-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
-              <li data-i18n="footer.col3-param5" class="mb-2 pt-2"><a href="#" class="text-[#808080] hover:text-xanhMain"></a></li>
+              <li
+                data-i18n="footer.col3-param2"
+                class="mb-2 border-b border-gray-400 py-2"
+              >
+                <a href="#" class="text-[#808080] hover:text-xanhMain"></a>
+              </li>
+              <li
+                data-i18n="footer.col3-param3"
+                class="mb-2 border-b border-gray-400 py-2"
+              >
+                <a href="#" class="text-[#808080] hover:text-xanhMain"></a>
+              </li>
+              <li
+                data-i18n="footer.col3-param4"
+                class="mb-2 border-b border-gray-400 py-2"
+              >
+                <a href="#" class="text-[#808080] hover:text-xanhMain"></a>
+              </li>
+              <li data-i18n="footer.col3-param5" class="mb-2 pt-2">
+                <a href="#" class="text-[#808080] hover:text-xanhMain"></a>
+              </li>
             </ul>
           </div>
           <!-- Column 4 -->
-          <div class="mt-8 h-full w-[240px] px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4">
-            <h3 data-i18n="footer.col4-title" class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"></h3>
+          <div
+            class="mt-8 h-full w-[240px] px-6 md:mt-0 md:w-1/3 lg:mt-0 lg:w-1/4"
+          >
+            <h3
+              data-i18n="footer.col4-title"
+              class="mb-2 sm:text-xl text-[#303030] text-base font-serif md:text-lg lg:text-xl"
+            ></h3>
             <ul class="text-sm text-gray-400 md:w-[90%] lg:w-[70%]">
               <li class="mb-2 border-b border-gray-400 py-2 flex">
-                <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-location-arrow"></i></span>
-                <span data-i18n="footer.col4-param" class="text-[#808080] pl-2 text-sm font-open"></span>
+                <span class="text-xanhMain text-sm font-open"
+                  ><i class="fa-solid fa-location-arrow"></i
+                ></span>
+                <span
+                  data-i18n="footer.col4-param"
+                  class="text-[#808080] pl-2 text-sm font-open"
+                ></span>
               </li>
               <li class="mb-2 border-b border-gray-400 py-2">
-                <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-phone"></i></span>
-                <a href="tel:+11276542233"><span class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">+11 (2) 7654
-                    2233</span></a>
+                <span class="text-xanhMain text-sm font-open"
+                  ><i class="fa-solid fa-phone"></i
+                ></span>
+                <a href="tel:+11276542233"
+                  ><span
+                    class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open"
+                    >+11 (2) 7654 2233</span
+                  ></a
+                >
               </li>
               <li class="mb-2 border-b border-gray-400 py-2">
-                <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-fax"></i></span><a href="tel:+11576542244"><span
-                    class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">+11 (5) 7654 2244</span></a>
+                <span class="text-xanhMain text-sm font-open"
+                  ><i class="fa-solid fa-fax"></i></span
+                ><a href="tel:+11576542244"
+                  ><span
+                    class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open"
+                    >+11 (5) 7654 2244</span
+                  ></a
+                >
               </li>
               <li class="mb-2">
-                <span class="text-xanhMain text-sm font-open"><i class="fa-solid fa-envelope"></i></span><a
-                  href="mailto:lms@gmail.com"><span
-                    class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open">lms@gmail.com</span></a>
+                <span class="text-xanhMain text-sm font-open"
+                  ><i class="fa-solid fa-envelope"></i></span
+                ><a href="mailto:lms@gmail.com"
+                  ><span
+                    class="text-[#808080] hover:text-xanhMain pl-2 text-sm font-open"
+                    >lms@gmail.com</span
+                  ></a
+                >
               </li>
             </ul>
           </div>
@@ -116,23 +914,41 @@
       </div>
     </section>
     <!-- footer bottom -->
-    <section class="md:flex md:justify-between md:items-center bg-xanhMain py-7 px-8 text-white lg:px-28">
-      <div class="mb-4 flex justify-center md:block lg:flex items-center sm:mb-0">
+    <section
+      class="md:flex md:justify-between md:items-center bg-xanhMain py-7 px-8 text-white lg:px-28"
+    >
+      <div
+        class="mb-4 flex justify-center md:block lg:flex items-center sm:mb-0"
+      >
         <div class="flex">
-          <p class="text-sm font-open">Copyright © 2020 LMS Theme All Rights Reserved</p>
+          <p class="text-sm font-open">
+            Copyright © 2020 LMS Theme All Rights Reserved
+          </p>
           <span class="mx-4 h-4 border-r-2 text-sm font-open"></span>
         </div>
         <p>Design Themes</p>
       </div>
       <div class="flex justify-center space-x-4 mt-4 md:mt-0 sm:gap-5">
-        <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i class="fa-brands fa-twitter"></i></i></a></span>
-        <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i class="fa-brands fa-youtube"></i></a></span>
-        <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i class="fa-brands fa-facebook-f"></i></a></span>
-        <span class="text-[#ffffff] text-sm font-open"><a class="social-icon" href="#!"><i class="fa-brands fa-skype"></i></a></span>
+        <span class="text-[#ffffff] text-sm font-open"
+          ><a class="social-icon" href="#!"
+            ><i class="fa-brands fa-twitter"></i></a
+        ></span>
+        <span class="text-[#ffffff] text-sm font-open"
+          ><a class="social-icon" href="#!"
+            ><i class="fa-brands fa-youtube"></i></a
+        ></span>
+        <span class="text-[#ffffff] text-sm font-open"
+          ><a class="social-icon" href="#!"
+            ><i class="fa-brands fa-facebook-f"></i></a
+        ></span>
+        <span class="text-[#ffffff] text-sm font-open"
+          ><a class="social-icon" href="#!"
+            ><i class="fa-brands fa-skype"></i></a
+        ></span>
       </div>
     </section>
   </footer>
-<script>
+  <script>
     AOS.init();
   </script>
   <script src="js/home.js"></script>
